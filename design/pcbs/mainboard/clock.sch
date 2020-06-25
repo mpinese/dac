@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7000 4250 2    50   Output ~ 0
+MCLK1
+$Comp
+L dac:CCHD-575 U15
+U 1 1 5ECD281C
+P 4750 4250
+F 0 "U15" H 4250 4750 50  0000 R CNN
+F 1 "CCHD-575" H 4550 4650 50  0000 R CNN
+F 2 "mainboard:CCHD-575" H 4750 4250 50  0001 C CNN
+F 3 "https://www.crystek.com/crystal/spec-sheets/clock/CCHD-575.pdf" H 4750 4250 50  0001 C CNN
+F 4 "744-1747-ND" H 4750 4250 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 4750 4250 50  0001 C CNN "Done"
+	1    4750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C77
+U 1 1 5ECD2BD1
+P 5000 3800
+F 0 "C77" V 4850 3950 50  0000 C CNN
+F 1 "10n" V 4950 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 3650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5000 3800 50  0001 C CNN
+F 4 "3.3" V 5000 3800 50  0001 C CNN "Vbias"
+F 5 "Decoupling" H 5000 3800 50  0001 C CNN "Function"
+F 6 "C14663" H 5000 3800 50  0001 C CNN "LCSC"
+F 7 "Yes" H 5000 3800 50  0001 C CNN "Done"
+	1    5000 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 3900
+Wire Wire Line
+	5150 3800 5250 3800
+Wire Wire Line
+	5250 3800 5250 3950
+Wire Wire Line
+	5500 4250 5100 4250
+Text Notes 5050 4350 0    50   ~ 0
+24.576 MHz
+$Comp
+L power:+3.3V #PWR094
+U 1 1 5ECD5268
+P 4750 3000
+F 0 "#PWR094" H 4750 2850 50  0001 C CNN
+F 1 "+3.3V" H 4765 3173 50  0000 C CNN
+F 2 "" H 4750 3000 50  0001 C CNN
+F 3 "" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3800
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5ECD6546
+P 4750 3300
+F 0 "FB1" H 4850 3346 50  0000 L CNN
+F 1 "Optional" H 4850 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 3300 50  0001 C CNN
+F 3 "~" H 4750 3300 50  0001 C CNN
+F 4 "Yes" H 4750 3300 50  0001 C CNN "Done"
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3000 4750 3200
+Wire Wire Line
+	4750 3400 4750 3450
+$Comp
+L dac:5PB1102 U16
+U 1 1 5ECAB577
+P 5950 4400
+F 0 "U16" H 6050 4800 50  0000 C CNN
+F 1 "5PB1102" H 6150 4700 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 6100 4150 50  0001 C CNN
+F 3 "https://www.idt.com/us/en/document/dst/5pb11xx-family-datasheet" H 6100 4150 50  0001 C CNN
+F 4 "800-2889-5-ND" H 5950 4400 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 5950 4400 50  0001 C CNN "Done"
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 7000 4550 2    50   Output ~ 0
+MCLK2
+Wire Wire Line
+	7000 4550 6400 4550
+Wire Wire Line
+	6400 4250 7000 4250
+$Comp
+L power:+3.3V #PWR097
+U 1 1 5ECAD717
+P 5500 4550
+F 0 "#PWR097" H 5500 4400 50  0001 C CNN
+F 1 "+3.3V" H 5515 4723 50  0000 C CNN
+F 2 "" H 5500 4550 50  0001 C CNN
+F 3 "" H 5500 4550 50  0001 C CNN
+	1    5500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR098
+U 1 1 5ECAE369
+P 5950 3000
+F 0 "#PWR098" H 5950 2850 50  0001 C CNN
+F 1 "+3.3V" H 5965 3173 50  0000 C CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C79
+U 1 1 5ECAEA63
+P 6200 3800
+F 0 "C79" V 6050 3950 50  0000 C CNN
+F 1 "10n" V 6150 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 3650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6200 3800 50  0001 C CNN
+F 4 "3.3" V 6200 3800 50  0001 C CNN "Vbias"
+F 5 "Decoupling" H 6200 3800 50  0001 C CNN "Function"
+F 6 "C14663" H 6200 3800 50  0001 C CNN "LCSC"
+F 7 "Yes" H 6200 3800 50  0001 C CNN "Done"
+	1    6200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4000 6500 3800
+Wire Wire Line
+	6500 3800 6350 3800
+Wire Wire Line
+	6050 3800 5950 3800
+Connection ~ 5950 3800
+Wire Wire Line
+	5950 3800 5950 4050
+Text Notes 6650 4200 0    50   ~ 0
+50 Ohm
+Text Notes 6650 4500 0    50   ~ 0
+50 Ohm
+Text Notes 10500 750  0    50   ~ 0
+Power:\n75 mA @ 3.3 V
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5ECBC8E0
+P 5950 3300
+F 0 "FB2" H 6050 3346 50  0000 L CNN
+F 1 "Optional" H 6050 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 3300 50  0001 C CNN
+F 3 "~" H 5950 3300 50  0001 C CNN
+F 4 "Yes" H 5950 3300 50  0001 C CNN "Done"
+	1    5950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3000 5950 3200
+Wire Wire Line
+	5950 3400 5950 3450
+Text Notes 7450 2750 0    50   ~ 0
+Bypass caps are good
+$Comp
+L Device:C C76
+U 1 1 5ECEC618
+P 5000 3550
+F 0 "C76" V 4850 3700 50  0000 C CNN
+F 1 "10n" V 4950 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5000 3550 50  0001 C CNN
+F 4 "3.3" V 5000 3550 50  0001 C CNN "Vbias"
+F 5 "Decoupling" H 5000 3550 50  0001 C CNN "Function"
+F 6 "C14663" H 5000 3550 50  0001 C CNN "LCSC"
+F 7 "Yes" H 5000 3550 50  0001 C CNN "Done"
+	1    5000 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3550 4750 3550
+Connection ~ 4750 3550
+Wire Wire Line
+	4750 3550 4750 3800
+Wire Wire Line
+	5150 3550 5250 3550
+Wire Wire Line
+	5250 3550 5250 3800
+Connection ~ 5250 3800
+$Comp
+L Device:C C78
+U 1 1 5ECECE2D
+P 6200 3550
+F 0 "C78" V 6050 3700 50  0000 C CNN
+F 1 "10n" V 6150 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6200 3550 50  0001 C CNN
+F 4 "3.3" V 6200 3550 50  0001 C CNN "Vbias"
+F 5 "Decoupling" H 6200 3550 50  0001 C CNN "Function"
+F 6 "C14663" H 6200 3550 50  0001 C CNN "LCSC"
+F 7 "Yes" H 6200 3550 50  0001 C CNN "Done"
+	1    6200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3550 5950 3550
+Connection ~ 5950 3550
+Wire Wire Line
+	5950 3550 5950 3800
+Wire Wire Line
+	6350 3550 6500 3550
+Wire Wire Line
+	6500 3550 6500 3800
+Connection ~ 6500 3800
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5EDD343A
+P 5950 3450
+F 0 "#FLG06" H 5950 3525 50  0001 C CNN
+F 1 "PWR_FLAG" V 5950 3577 50  0000 L CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "~" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5950 3450
+Wire Wire Line
+	5950 3450 5950 3550
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5EDD409B
+P 4750 3450
+F 0 "#FLG05" H 4750 3525 50  0001 C CNN
+F 1 "PWR_FLAG" V 4750 3577 50  0000 L CNN
+F 2 "" H 4750 3450 50  0001 C CNN
+F 3 "~" H 4750 3450 50  0001 C CNN
+	1    4750 3450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4750 3450
+Wire Wire Line
+	4750 3450 4750 3550
+$Comp
+L power:GNDD #PWR0116
+U 1 1 5F292F45
+P 4750 4600
+F 0 "#PWR0116" H 4750 4350 50  0001 C CNN
+F 1 "GNDD" H 4754 4445 50  0000 C CNN
+F 2 "" H 4750 4600 50  0001 C CNN
+F 3 "" H 4750 4600 50  0001 C CNN
+	1    4750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0117
+U 1 1 5F293E89
+P 5250 3950
+F 0 "#PWR0117" H 5250 3700 50  0001 C CNN
+F 1 "GNDD" H 5254 3795 50  0000 C CNN
+F 2 "" H 5250 3950 50  0001 C CNN
+F 3 "" H 5250 3950 50  0001 C CNN
+	1    5250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0118
+U 1 1 5F2941BE
+P 5950 4750
+F 0 "#PWR0118" H 5950 4500 50  0001 C CNN
+F 1 "GNDD" H 5954 4595 50  0000 C CNN
+F 2 "" H 5950 4750 50  0001 C CNN
+F 3 "" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0119
+U 1 1 5F294768
+P 6500 4000
+F 0 "#PWR0119" H 6500 3750 50  0001 C CNN
+F 1 "GNDD" H 6504 3845 50  0000 C CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

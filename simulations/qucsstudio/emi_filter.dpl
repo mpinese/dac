@@ -1,0 +1,32 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=0,0,1542,847,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=emi_filter.dat>
+  <DataDisplay=emi_filter.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 90 550 560 430 3 #c0c0c0 1 10 1 1 1 1e+08 0 -60 10 5 1 0 0 0 315 0 225 "" "" "">
+	<Legend 10 -100 1>
+	<"dB(S[2,1])" #0000ff 3 3 0 1 0 1 "Ideal">
+	<"dB(S[4,3])" #ff0000 0 3 0 0 0 1 "Realistic">
+  </Rect>
+</Diagrams>
+<Paintings>
+  <Text 425 151 12 #000000 0 "To be addressed by 4700-008MLF">
+  <Text 85 91 12 #000000 0 "Discrete EMI filter performance">
+  <Line 570 220 80 0 #000080 2 1>
+  <Arrow 570 170 40 40 20 8 #000000 2 1 0>
+</Paintings>

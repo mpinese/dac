@@ -1,0 +1,32 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=0,0,1447,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=psu_ripple.dat>
+  <DataDisplay=psu_ripple.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 100 450 580 420 3 #c0c0c0 1 00 1 0 0.0005 0.005 1 -0.132522 0.05 0.15 1 0 0 0 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"Pr1.It" #0000ff 0 3 0 0 0 0 "">
+	<"Pr3.It" #ff0000 0 3 0 0 0 0 "">
+  </Rect>
+  <Rect 820 450 580 420 3 #c0c0c0 1 00 1 0 0.0005 0.005 1 0 1 15 1 0 0 0 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"Pr2.dVt" #0000ff 0 3 0 0 0 0 "">
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>

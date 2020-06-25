@@ -1,0 +1,27 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=0,0,897,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=headphone_amp_input2.dat>
+  <DataDisplay=headphone_amp_input2.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 110 600 740 560 3 #c0c0c0 1 10 1 1 1 30000 0 -10 1 0 1 0 0 0 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"dB(Pr1.dv/Pr2.dv)" #000000 3 3 0 0 0 0 "">
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>

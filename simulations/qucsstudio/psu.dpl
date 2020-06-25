@@ -1,0 +1,37 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=-146,-280,1227,976,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=psu.dat>
+  <DataDisplay=psu.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 20 470 520 490 3 #c0c0c0 1 10 1 10 1 1e+08 0 -90 10 10 1 0 0 0 315 0 225 "Frequency (Hz)" "Attenuation (dB)" "">
+	<Legend 10 -100 1>
+	<"dB(Pr3.dv/1e-6)" #00ff00 3 3 0 0 0 1 "At ext PSU output">
+	<"dB(Pr9.dv/1e-6)" #00aaff 3 3 0 0 0 1 "At signal linreg input">
+	<"dB(Pr10.dv/1e-6)" #ff00ff 3 3 0 0 0 1 "At amp linreg input">
+  </Rect>
+  <Rect 660 470 520 490 3 #c0c0c0 1 00 1 0 0.0002 0.002 0 11.5 0.1 12.1 1 0 0 0 315 0 225 "Time (s)" "Potential (V)" "">
+	<Legend 310 -100 1>
+	<"Pr3.dVt" #55ff00 3 3 0 0 0 1 "At ext PSU output">
+	<"Pr9.dVt" #55aaff 3 3 0 0 0 1 "At signal linreg input">
+	<"Pr10.dVt" #ff00ff 3 3 0 0 0 1 "At amp linreg input">
+  </Rect>
+</Diagrams>
+<Paintings>
+  <Text 665 -49 12 #000000 0 "Load transient response">
+  <Text 25 -49 12 #000000 0 "Input-referred source noise attenuation">
+</Paintings>

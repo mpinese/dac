@@ -1,0 +1,739 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM8:STM8S003F3P U?
+U 1 1 5EC774D1
+P 4600 2950
+AR Path="/5EC774D1" Ref="U?"  Part="1" 
+AR Path="/5EC75F5F/5EC774D1" Ref="U17"  Part="1" 
+F 0 "U17" H 4650 3500 50  0000 C CNN
+F 1 "STM8S003F3P" H 4650 3400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4650 4050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 4550 2550 50  0001 C CNN
+F 4 "C52717" H 4600 2950 50  0001 C CNN "LCSC"
+F 5 "Yes" H 4600 2950 50  0001 C CNN "Done"
+	1    4600 2950
+	1    0    0    -1  
+$EndComp
+Text HLabel 3400 2650 0    50   BiDi ~ 0
+I2C_SCL
+Text HLabel 3400 2750 0    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 3400 2950 0    50   Input ~ 0
+BR_MUTE
+Text HLabel 5600 2850 2    50   Output ~ 0
+RC_MUTE
+Text HLabel 3400 2350 0    50   Input ~ 0
+~RC_RDY
+Text HLabel 3400 2450 0    50   Input ~ 0
+~RC_INT
+$Comp
+L Device:C C?
+U 1 1 5ECD6609
+P 3900 3900
+AR Path="/5EC7811C/5ECD6609" Ref="C?"  Part="1" 
+AR Path="/5EC75F5F/5ECD6609" Ref="C81"  Part="1" 
+F 0 "C81" H 4015 3946 50  0000 L CNN
+F 1 "1u" H 4015 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 3750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 3900 3900 50  0001 C CNN
+F 4 "Unknown" H 3900 3900 50  0001 C CNN "Vbias"
+F 5 "Noise reduction" H 3900 3900 50  0001 C CNN "Function"
+F 6 "C28323" H 3900 3900 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3900 3900 50  0001 C CNN "Done"
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0106
+U 1 1 5ECD73A1
+P 4600 4050
+F 0 "#PWR0106" H 4600 3800 50  0001 C CNN
+F 1 "GNDD" H 4604 3895 50  0000 C CNN
+F 2 "" H 4600 4050 50  0001 C CNN
+F 3 "" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0104
+U 1 1 5ECD8A81
+P 3900 4050
+F 0 "#PWR0104" H 3900 3800 50  0001 C CNN
+F 1 "GNDD" H 3904 3895 50  0000 C CNN
+F 2 "" H 3900 4050 50  0001 C CNN
+F 3 "" H 3900 4050 50  0001 C CNN
+	1    3900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3950 4600 4050
+Wire Wire Line
+	3400 2650 3650 2650
+Wire Wire Line
+	3400 2750 3650 2750
+$Comp
+L Device:C C?
+U 1 1 5ECDAAA6
+P 3450 3900
+AR Path="/5EC7811C/5ECDAAA6" Ref="C?"  Part="1" 
+AR Path="/5EC75F5F/5ECDAAA6" Ref="C80"  Part="1" 
+F 0 "C80" H 3650 3950 50  0000 C CNN
+F 1 "0.1u" H 3650 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 3750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 3450 3900 50  0001 C CNN
+F 4 "C14663" H 3450 3900 50  0001 C CNN "LCSC"
+F 5 "5" V 3450 3900 50  0001 C CNN "Vbias"
+F 6 "Decoupling" H 3450 3900 50  0001 C CNN "Function"
+F 7 "Yes" H 3450 3900 50  0001 C CNN "Done"
+	1    3450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0102
+U 1 1 5ECDB498
+P 3450 4050
+F 0 "#PWR0102" H 3450 3800 50  0001 C CNN
+F 1 "GNDD" H 3454 3895 50  0000 C CNN
+F 2 "" H 3450 4050 50  0001 C CNN
+F 3 "" H 3450 4050 50  0001 C CNN
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3750 3450 3550
+Wire Wire Line
+	3450 3550 4000 3550
+$Comp
+L Device:R R35
+U 1 1 5ECDC2E9
+P 3800 2650
+F 0 "R35" V 3700 2550 50  0000 C CNN
+F 1 "100" V 3700 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1000TCE_C25076.pdf" H 3800 2650 50  0001 C CNN
+F 4 "C25076" V 3800 2650 50  0001 C CNN "LCSC"
+F 5 "Yes" V 3800 2650 50  0001 C CNN "Done"
+	1    3800 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2650 4000 2650
+Wire Wire Line
+	3950 2750 4000 2750
+$Comp
+L Device:R R36
+U 1 1 5ECDCFD8
+P 3800 2750
+F 0 "R36" V 3900 2650 50  0000 C CNN
+F 1 "100" V 3900 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 2750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1000TCE_C25076.pdf" H 3800 2750 50  0001 C CNN
+F 4 "C25076" V 3800 2750 50  0001 C CNN "LCSC"
+F 5 "Yes" V 3800 2750 50  0001 C CNN "Done"
+	1    3800 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 2650 5200 2650
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5ECE0AA9
+P 7700 2350
+F 0 "J10" H 7780 2342 50  0000 L CNN
+F 1 "Conn_01x04" H 7780 2251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 2350 50  0001 C CNN
+F 3 "~" H 7700 2350 50  0001 C CNN
+F 4 "Yes" H 7700 2350 50  0001 C CNN "Done"
+	1    7700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5ECE251F
+P 7400 2150
+F 0 "#PWR0109" H 7400 2000 50  0001 C CNN
+F 1 "+3.3V" H 7415 2323 50  0000 C CNN
+F 2 "" H 7400 2150 50  0001 C CNN
+F 3 "" H 7400 2150 50  0001 C CNN
+	1    7400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0110
+U 1 1 5ECE29B8
+P 7400 2650
+F 0 "#PWR0110" H 7400 2400 50  0001 C CNN
+F 1 "GNDD" H 7404 2495 50  0000 C CNN
+F 2 "" H 7400 2650 50  0001 C CNN
+F 3 "" H 7400 2650 50  0001 C CNN
+	1    7400 2650
+	1    0    0    -1  
+$EndComp
+Text Label 5600 2650 0    50   ~ 0
+SWIM
+Text Label 3700 3550 0    50   ~ 0
+NRST
+Text Label 7150 2550 2    50   ~ 0
+NRST
+Text Label 7150 2350 2    50   ~ 0
+SWIM
+Wire Wire Line
+	7500 2250 7400 2250
+Wire Wire Line
+	7400 2250 7400 2150
+Wire Wire Line
+	7150 2350 7500 2350
+Wire Wire Line
+	7150 2550 7500 2550
+Wire Wire Line
+	7400 2650 7400 2450
+Wire Wire Line
+	7400 2450 7500 2450
+$Comp
+L Device:R R33
+U 1 1 5ECEA0DF
+P 3450 3350
+F 0 "R33" V 3550 3250 50  0000 C CNN
+F 1 "10k" V 3550 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 3350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3450 3350 50  0001 C CNN
+F 4 "C25744" V 3450 3350 50  0001 C CNN "LCSC"
+F 5 "Yes" V 3450 3350 50  0001 C CNN "Done"
+	1    3450 3350
+	-1   0    0    1   
+$EndComp
+Connection ~ 3450 3550
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5ECEB244
+P 3450 3200
+F 0 "#PWR0101" H 3450 3050 50  0001 C CNN
+F 1 "+3.3V" H 3465 3373 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 5ED02B12
+P 7700 3450
+F 0 "J11" H 7780 3442 50  0000 L CNN
+F 1 "Conn_01x04" H 7780 3351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 3450 50  0001 C CNN
+F 3 "~" H 7700 3450 50  0001 C CNN
+F 4 "Yes" H 7700 3450 50  0001 C CNN "Done"
+	1    7700 3450
+	1    0    0    -1  
+$EndComp
+Text Label 5600 2950 0    50   ~ 0
+UART_CK
+Text Label 5600 3050 0    50   ~ 0
+UART_TX
+Text Label 5600 3150 0    50   ~ 0
+UART_RX
+Text Label 7350 3350 2    50   ~ 0
+UART_CK
+Text Label 7350 3450 2    50   ~ 0
+UART_TX
+Text Label 7350 3550 2    50   ~ 0
+UART_RX
+$Comp
+L power:GNDD #PWR0108
+U 1 1 5ED04F5A
+P 7350 3750
+F 0 "#PWR0108" H 7350 3500 50  0001 C CNN
+F 1 "GNDD" H 7354 3595 50  0000 C CNN
+F 2 "" H 7350 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3750 7350 3650
+Wire Wire Line
+	7350 3650 7500 3650
+Wire Wire Line
+	7500 3550 7350 3550
+Wire Wire Line
+	7350 3450 7500 3450
+Wire Wire Line
+	7500 3350 7350 3350
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5ED070E9
+P 4600 1550
+F 0 "#PWR0105" H 4600 1400 50  0001 C CNN
+F 1 "+3.3V" H 4615 1723 50  0000 C CNN
+F 2 "" H 4600 1550 50  0001 C CNN
+F 3 "" H 4600 1550 50  0001 C CNN
+	1    4600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED0751A
+P 4850 1750
+AR Path="/5EC7811C/5ED0751A" Ref="C?"  Part="1" 
+AR Path="/5EC75F5F/5ED0751A" Ref="C82"  Part="1" 
+F 0 "C82" V 5000 1850 50  0000 C CNN
+F 1 "0.1u" V 5000 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 1600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4850 1750 50  0001 C CNN
+F 4 "C14663" H 4850 1750 50  0001 C CNN "LCSC"
+F 5 "5" V 4850 1750 50  0001 C CNN "Vbias"
+F 6 "Decoupling" H 4850 1750 50  0001 C CNN "Function"
+F 7 "Yes" H 4850 1750 50  0001 C CNN "Done"
+	1    4850 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1550 4600 1750
+Wire Wire Line
+	4700 1750 4600 1750
+Connection ~ 4600 1750
+Wire Wire Line
+	4600 1750 4600 1950
+$Comp
+L power:GNDD #PWR0107
+U 1 1 5ED09D6B
+P 5100 1850
+F 0 "#PWR0107" H 5100 1600 50  0001 C CNN
+F 1 "GNDD" H 5104 1695 50  0000 C CNN
+F 2 "" H 5100 1850 50  0001 C CNN
+F 3 "" H 5100 1850 50  0001 C CNN
+	1    5100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1850 5100 1750
+Wire Wire Line
+	5100 1750 5000 1750
+Wire Wire Line
+	3400 2350 4000 2350
+Wire Wire Line
+	3400 2450 3600 2450
+Wire Wire Line
+	3450 3500 3450 3550
+Wire Wire Line
+	3400 2950 4000 2950
+Wire Wire Line
+	5200 2950 5600 2950
+Wire Wire Line
+	5200 3050 5600 3050
+Wire Wire Line
+	5200 3150 5600 3150
+Wire Wire Line
+	5600 2850 5200 2850
+Text Label 3900 3050 2    50   ~ 0
+PC4
+Text Label 3900 3150 2    50   ~ 0
+PC5
+Text Label 3900 3250 2    50   ~ 0
+PC6
+Text Label 3900 3350 2    50   ~ 0
+PC7
+Wire Wire Line
+	3900 3050 4000 3050
+Wire Wire Line
+	3900 3150 4000 3150
+Wire Wire Line
+	3900 3250 4000 3250
+Wire Wire Line
+	3900 3350 4000 3350
+$Comp
+L power:GNDD #PWR0111
+U 1 1 5ED39D61
+P 7800 5950
+F 0 "#PWR0111" H 7800 5700 50  0001 C CNN
+F 1 "GNDD" H 7804 5795 50  0000 C CNN
+F 2 "" H 7800 5950 50  0001 C CNN
+F 3 "" H 7800 5950 50  0001 C CNN
+	1    7800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3750 3900 3650
+Wire Wire Line
+	3900 3650 4000 3650
+$Comp
+L Device:R R34
+U 1 1 5EDFF3C3
+P 3600 1950
+F 0 "R34" V 3700 1850 50  0000 C CNN
+F 1 "10k" V 3700 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 1950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3600 1950 50  0001 C CNN
+F 4 "C25744" V 3600 1950 50  0001 C CNN "LCSC"
+F 5 "Yes" V 3600 1950 50  0001 C CNN "Done"
+	1    3600 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 2100 3600 2450
+Connection ~ 3600 2450
+Wire Wire Line
+	3600 2450 4000 2450
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5EE02291
+P 3600 1800
+F 0 "#PWR0103" H 3600 1650 50  0001 C CNN
+F 1 "+3.3V" H 3615 1973 50  0000 C CNN
+F 2 "" H 3600 1800 50  0001 C CNN
+F 3 "" H 3600 1800 50  0001 C CNN
+	1    3600 1800
+	1    0    0    -1  
+$EndComp
+Text Label 3900 2250 2    50   ~ 0
+PA1
+Wire Wire Line
+	3900 2250 4000 2250
+Text Label 6000 4800 2    50   ~ 0
+PA1
+Text Label 6000 5050 2    50   ~ 0
+PC4
+Text Label 6000 5300 2    50   ~ 0
+PC5
+Text Label 6000 5550 2    50   ~ 0
+PC6
+Text Label 6000 5800 2    50   ~ 0
+PC7
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5EE1EEB3
+P 6650 4800
+F 0 "JP1" H 6650 4921 50  0000 C CNN
+F 1 "~" H 6650 4921 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 4800 50  0001 C CNN
+F 3 "~" H 6650 4800 50  0001 C CNN
+F 4 "Yes" H 6650 4800 50  0001 C CNN "Done"
+	1    6650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5EE21C5A
+P 6650 5050
+F 0 "JP2" H 6650 5171 50  0000 C CNN
+F 1 "~" H 6650 5171 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5050 50  0001 C CNN
+F 3 "~" H 6650 5050 50  0001 C CNN
+F 4 "Yes" H 6650 5050 50  0001 C CNN "Done"
+	1    6650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 5EE21F58
+P 6650 5300
+F 0 "JP3" H 6650 5421 50  0000 C CNN
+F 1 "~" H 6650 5421 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5300 50  0001 C CNN
+F 3 "~" H 6650 5300 50  0001 C CNN
+F 4 "Yes" H 6650 5300 50  0001 C CNN "Done"
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5EE223DB
+P 6650 5550
+F 0 "JP4" H 6650 5671 50  0000 C CNN
+F 1 "~" H 6650 5671 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5550 50  0001 C CNN
+F 3 "~" H 6650 5550 50  0001 C CNN
+F 4 "Yes" H 6650 5550 50  0001 C CNN "Done"
+	1    6650 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 5EE227DC
+P 6650 5800
+F 0 "JP5" H 6650 5921 50  0000 C CNN
+F 1 "~" H 6650 5921 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5800 50  0001 C CNN
+F 3 "~" H 6650 5800 50  0001 C CNN
+F 4 "Yes" H 6650 5800 50  0001 C CNN "Done"
+	1    6650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EE2EA58
+P 6250 4800
+F 0 "TP6" H 6308 4872 50  0000 L CNN
+F 1 "~" H 6308 4827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 4800 50  0001 C CNN
+F 3 "~" H 6450 4800 50  0001 C CNN
+F 4 "Yes" H 6250 4800 50  0001 C CNN "Done"
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5EE2FA33
+P 6250 5050
+F 0 "TP7" H 6308 5122 50  0000 L CNN
+F 1 "~" H 6308 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5050 50  0001 C CNN
+F 3 "~" H 6450 5050 50  0001 C CNN
+F 4 "Yes" H 6250 5050 50  0001 C CNN "Done"
+	1    6250 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4800 6250 4800
+Wire Wire Line
+	6000 5300 6250 5300
+Wire Wire Line
+	6000 5550 6250 5550
+Wire Wire Line
+	6000 5800 6250 5800
+Connection ~ 6250 4800
+Wire Wire Line
+	6250 4800 6550 4800
+Connection ~ 6250 5050
+Wire Wire Line
+	6250 5050 6000 5050
+Wire Wire Line
+	6250 5050 6550 5050
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EE3B2A1
+P 6250 5300
+F 0 "TP8" H 6308 5372 50  0000 L CNN
+F 1 "~" H 6308 5327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5300 50  0001 C CNN
+F 3 "~" H 6450 5300 50  0001 C CNN
+F 4 "Yes" H 6250 5300 50  0001 C CNN "Done"
+	1    6250 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 5300
+Wire Wire Line
+	6250 5300 6550 5300
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EE3B777
+P 6250 5550
+F 0 "TP9" H 6308 5622 50  0000 L CNN
+F 1 "~" H 6308 5577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5550 50  0001 C CNN
+F 3 "~" H 6450 5550 50  0001 C CNN
+F 4 "Yes" H 6250 5550 50  0001 C CNN "Done"
+	1    6250 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 5550
+Wire Wire Line
+	6250 5550 6550 5550
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EE3BB7E
+P 6250 5800
+F 0 "TP10" H 6308 5872 50  0000 L CNN
+F 1 "~" H 6308 5827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5800 50  0001 C CNN
+F 3 "~" H 6450 5800 50  0001 C CNN
+F 4 "Yes" H 6250 5800 50  0001 C CNN "Done"
+	1    6250 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 5800
+Wire Wire Line
+	6250 5800 6550 5800
+Text HLabel 5600 2750 2    50   Input ~ 0
+DIAL
+Wire Wire Line
+	5200 2750 5600 2750
+$Comp
+L Device:LED_Small D1
+U 1 1 5ECF4563
+P 7450 4800
+F 0 "D1" H 7550 4700 50  0000 C CNN
+F 1 "Red" H 7300 4700 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7450 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7450 4800 50  0001 C CNN
+F 4 "C2286" H 7450 4800 50  0001 C CNN "LCSC"
+F 5 "Yes" H 7450 4800 50  0001 C CNN "Done"
+	1    7450 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5ED36D34
+P 7450 5050
+F 0 "D2" H 7550 4950 50  0000 C CNN
+F 1 "Yellow" H 7300 4950 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf" V 7450 5050 50  0001 C CNN
+F 4 "C72038" H 7450 5050 50  0001 C CNN "LCSC"
+F 5 "Yes" H 7450 5050 50  0001 C CNN "Done"
+	1    7450 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 5ED38293
+P 7450 5300
+F 0 "D3" H 7550 5200 50  0000 C CNN
+F 1 "Green" H 7300 5200 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf" V 7450 5300 50  0001 C CNN
+F 4 "C72043" H 7450 5300 50  0001 C CNN "LCSC"
+F 5 "Yes" H 7450 5300 50  0001 C CNN "Done"
+	1    7450 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 5ED2A9FD
+P 7450 5550
+F 0 "D4" H 7550 5450 50  0000 C CNN
+F 1 "Blue" H 7300 5450 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" V 7450 5550 50  0001 C CNN
+F 4 "C72041" H 7450 5550 50  0001 C CNN "LCSC"
+F 5 "Yes" H 7450 5550 50  0001 C CNN "Done"
+	1    7450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 5EE124F0
+P 7450 5800
+F 0 "D5" H 7550 5700 50  0000 C CNN
+F 1 "White" H 7300 5700 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-0603White-light-173-207mcd_C2290.pdf" V 7450 5800 50  0001 C CNN
+F 4 "C2290" H 7450 5800 50  0001 C CNN "LCSC"
+F 5 "Yes" H 7450 5800 50  0001 C CNN "Done"
+	1    7450 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 5550 6900 5550
+Wire Wire Line
+	6750 5050 6900 5050
+Wire Wire Line
+	6750 4800 6900 4800
+Wire Wire Line
+	6900 5300 6750 5300
+Wire Wire Line
+	6900 5800 6750 5800
+Wire Wire Line
+	7800 5800 7800 5950
+Connection ~ 7800 5800
+Wire Wire Line
+	7550 5800 7800 5800
+Wire Wire Line
+	7100 5800 7350 5800
+$Comp
+L Device:R_Small R41
+U 1 1 5EE129C7
+P 7000 5800
+F 0 "R41" V 6900 5750 50  0000 C CNN
+F 1 "33" V 6900 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF330JTCE_C25105.pdf" H 7000 5800 50  0001 C CNN
+F 4 "C25105" V 7000 5800 50  0001 C CNN "LCSC"
+F 5 "Yes" V 7000 5800 50  0001 C CNN "Done"
+	1    7000 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 5550 7800 5800
+Connection ~ 7800 5550
+Wire Wire Line
+	7550 5550 7800 5550
+Wire Wire Line
+	7800 5550 7800 5300
+Connection ~ 7800 5300
+Wire Wire Line
+	7550 5300 7800 5300
+Wire Wire Line
+	7800 5300 7800 5050
+Wire Wire Line
+	7800 5050 7800 4800
+Connection ~ 7800 5050
+Wire Wire Line
+	7550 5050 7800 5050
+Wire Wire Line
+	7800 4800 7550 4800
+Wire Wire Line
+	7100 5050 7350 5050
+$Comp
+L Device:R_Small R38
+U 1 1 5ED3829F
+P 7000 5050
+F 0 "R38" V 6900 5000 50  0000 C CNN
+F 1 "220" V 6900 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2200TCE_C25091.pdf" H 7000 5050 50  0001 C CNN
+F 4 "C25091" V 7000 5050 50  0001 C CNN "LCSC"
+F 5 "Yes" V 7000 5050 50  0001 C CNN "Done"
+	1    7000 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 5300 7100 5300
+$Comp
+L Device:R_Small R39
+U 1 1 5ED36D29
+P 7000 5300
+F 0 "R39" V 6900 5250 50  0000 C CNN
+F 1 "33" V 6900 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF330JTCE_C25105.pdf" H 7000 5300 50  0001 C CNN
+F 4 "C25105" V 7000 5300 50  0001 C CNN "LCSC"
+F 5 "Yes" V 7000 5300 50  0001 C CNN "Done"
+	1    7000 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 5550 7100 5550
+Wire Wire Line
+	7100 4800 7350 4800
+$Comp
+L Device:R_Small R40
+U 1 1 5ED22AB6
+P 7000 5550
+F 0 "R40" V 6900 5500 50  0000 C CNN
+F 1 "47" V 6900 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF470JTCE_C25118.pdf" H 7000 5550 50  0001 C CNN
+F 4 "C25118" V 7000 5550 50  0001 C CNN "LCSC"
+F 5 "Yes" V 7000 5550 50  0001 C CNN "Done"
+	1    7000 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R37
+U 1 1 5ECF4BBE
+P 7000 4800
+F 0 "R37" V 6900 4750 50  0000 C CNN
+F 1 "220" V 6900 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2200TCE_C25091.pdf" H 7000 4800 50  0001 C CNN
+F 4 "C25091" V 7000 4800 50  0001 C CNN "LCSC"
+F 5 "Yes" V 7000 4800 50  0001 C CNN "Done"
+	1    7000 4800
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

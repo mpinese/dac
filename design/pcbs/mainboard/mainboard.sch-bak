@@ -1,0 +1,625 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5000 2500 800  1200
+U 5EC77FFA
+F0 "ASRC" 50
+F1 "asrc.sch" 50
+F2 "MCLK" I R 5800 3150 50 
+F3 "~INT" O L 5000 3600 50 
+F4 "MUTE" I L 5000 3000 50 
+F5 "~RDY" O L 5000 3400 50 
+F6 "SDOUT" O R 5800 2700 50 
+F7 "SDIN" I L 5000 2700 50 
+F8 "LRCKIN" I L 5000 2900 50 
+F9 "BCKIN" I L 5000 2800 50 
+F10 "LRCKOUT" O R 5800 2900 50 
+F11 "BCKOUT" O R 5800 2800 50 
+F12 "I2C_SCL" B R 5800 3450 50 
+F13 "I2C_SDA" B R 5800 3550 50 
+$EndSheet
+$Sheet
+S 3000 4500 800  1200
+U 5EC7824B
+F0 "PSU" 50
+F1 "psu.sch" 50
+F2 "POWERON" I R 3800 5550 50 
+F3 "RELAYPWR" O R 3800 5450 50 
+F4 "+5V" I L 3000 5500 50 
+F5 "0V" I L 3000 5300 50 
+F6 "+12V" I L 3000 5000 50 
+F7 "-12V" I L 3000 4700 50 
+$EndSheet
+$Sheet
+S 3500 2500 800  1200
+U 5EC79CC1
+F0 "USB Bridge" 50
+F1 "usb_bridge.sch" 50
+F2 "I2S_LRCK" O R 4300 2900 50 
+F3 "I2S_BCK" O R 4300 2800 50 
+F4 "I2S_SDOUT" O R 4300 2700 50 
+F5 "MUTE" O R 4300 3000 50 
+$EndSheet
+Wire Wire Line
+	4300 2700 5000 2700
+Wire Wire Line
+	5000 2800 4300 2800
+Wire Wire Line
+	4300 2900 5000 2900
+$Comp
+L Device:R R1
+U 1 1 5ECF9309
+P 6500 4500
+F 0 "R1" H 6650 4450 50  0000 C CNN
+F 1 "2.7k" H 6650 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6430 4500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6500 4500 50  0001 C CNN
+F 4 "C25885" H 6500 4500 50  0001 C CNN "LCSC"
+F 5 "Yes" H 6500 4500 50  0001 C CNN "Done"
+F 6 "Pullup" H 6500 4500 50  0001 C CNN "Function"
+	1    6500 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ECF9BAA
+P 6650 4500
+F 0 "R2" H 6500 4450 50  0000 C CNN
+F 1 "2.7k" H 6500 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6580 4500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6650 4500 50  0001 C CNN
+F 4 "C25885" H 6650 4500 50  0001 C CNN "LCSC"
+F 5 "Yes" H 6650 4500 50  0001 C CNN "Done"
+F 6 "Pullup" H 6650 4500 50  0001 C CNN "Function"
+	1    6650 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 4650 6100 4650
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5ECFC435
+P 6650 4250
+F 0 "#PWR03" H 6650 4100 50  0001 C CNN
+F 1 "+3V3" H 6665 4423 50  0000 C CNN
+F 2 "" H 6650 4250 50  0001 C CNN
+F 3 "" H 6650 4250 50  0001 C CNN
+	1    6650 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3600 4900 3600
+Wire Wire Line
+	5000 4650 4900 4650
+Wire Wire Line
+	4900 4650 4900 3600
+$Sheet
+S 7750 2850 500  500 
+U 5ECE427F
+F0 "Headphone Amp" 50
+F1 "headamp.sch" 50
+F2 "LIN" I L 7750 3250 50 
+F3 "RIN" I L 7750 2950 50 
+F4 "LOUT" O R 8250 3250 50 
+F5 "ROUT" O R 8250 2950 50 
+$EndSheet
+Wire Wire Line
+	7300 3600 7500 3600
+Wire Wire Line
+	7300 2600 7500 2600
+$Comp
+L power:GND #PWR02
+U 1 1 5ECDD879
+P 2750 2700
+F 0 "#PWR02" H 2750 2450 50  0001 C CNN
+F 1 "GND" H 2755 2527 50  0000 C CNN
+F 2 "" H 2750 2700 50  0001 C CNN
+F 3 "" H 2750 2700 50  0001 C CNN
+	1    2750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5ECDCBF4
+P 2750 2200
+F 0 "#PWR01" H 2750 1950 50  0001 C CNN
+F 1 "GND" H 2755 2027 50  0000 C CNN
+F 2 "" H 2750 2200 50  0001 C CNN
+F 3 "" H 2750 2200 50  0001 C CNN
+	1    2750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5ECDAB0B
+P 2250 2500
+F 0 "J2" H 2350 2475 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2350 2384 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2250 2500 50  0001 C CNN
+F 3 "~" H 2250 2500 50  0001 C CNN
+F 4 "SC1828-ND" H 2250 2500 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 2250 2500 50  0001 C CNN "Done"
+	1    2250 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5ECD9A3B
+P 2250 2000
+F 0 "J1" H 2350 1929 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2350 1884 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2250 2000 50  0001 C CNN
+F 3 "~" H 2250 2000 50  0001 C CNN
+F 4 "SC2440-ND" H 2250 2000 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 2250 2000 50  0001 C CNN "Done"
+	1    2250 2000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2700 5800 2700
+Wire Wire Line
+	5800 2800 6500 2800
+Wire Wire Line
+	6500 2900 5800 2900
+Wire Wire Line
+	5800 3150 6000 3150
+$Sheet
+S 6500 2500 800  1200
+U 5EC7811C
+F0 "DAC" 50
+F1 "dac.sch" 50
+F2 "I2C_SCL" B L 6500 3450 50 
+F3 "I2C_SDA" B L 6500 3550 50 
+F4 "SDIN" I L 6500 2700 50 
+F5 "BCKIN" I L 6500 2800 50 
+F6 "LRCKIN" I L 6500 2900 50 
+F7 "MCLK" I L 6500 3150 50 
+F8 "VOUTL" O R 7300 3600 50 
+F9 "VOUTR" O R 7300 2600 50 
+$EndSheet
+$Sheet
+S 5000 1500 800  500 
+U 5ECC1DE2
+F0 "Clock" 50
+F1 "clock.sch" 50
+F2 "MCLK1" O R 5800 1650 50 
+F3 "MCLK2" O R 5800 1850 50 
+$EndSheet
+Wire Wire Line
+	5800 1650 6300 1650
+Wire Wire Line
+	6300 1650 6300 3150
+Wire Wire Line
+	6300 3150 6500 3150
+Wire Wire Line
+	6000 3150 6000 1850
+Wire Wire Line
+	6000 1850 5800 1850
+Text Notes 5900 1650 0    50   ~ 0
+50 Ohm
+Text Notes 5900 1850 0    50   ~ 0
+50 Ohm
+Text Notes 5900 1450 0    50   ~ 0
+2 x 24.576 MHz
+Wire Wire Line
+	5000 3000 4750 3000
+Text Notes 1050 5000 0    50   ~ 0
+From external PSU
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF5FF78
+P 9150 5050
+AR Path="/5EC75F5F/5EF5FF78" Ref="#PWR?"  Part="1" 
+AR Path="/5EF5FF78" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 9150 4900 50  0001 C CNN
+F 1 "+3.3V" H 9165 5223 50  0000 C CNN
+F 2 "" H 9150 5050 50  0001 C CNN
+F 3 "" H 9150 5050 50  0001 C CNN
+	1    9150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EF5FF7F
+P 9150 5450
+AR Path="/5EC75F5F/5EF5FF7F" Ref="#PWR?"  Part="1" 
+AR Path="/5EF5FF7F" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 9150 5200 50  0001 C CNN
+F 1 "GNDD" H 9154 5295 50  0000 C CNN
+F 2 "" H 9150 5450 50  0001 C CNN
+F 3 "" H 9150 5450 50  0001 C CNN
+	1    9150 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3400 5000 3400
+Wire Wire Line
+	4300 3000 4700 3000
+Wire Wire Line
+	5000 4750 4850 4750
+Wire Wire Line
+	4850 4750 4850 3400
+$Sheet
+S 5000 4500 800  1200
+U 5EC75F5F
+F0 "MCU" 50
+F1 "mcu.sch" 50
+F2 "I2C_SCL" B R 5800 4650 50 
+F3 "I2C_SDA" B R 5800 4750 50 
+F4 "BR_MUTE" I L 5000 5000 50 
+F5 "~RC_RDY" I L 5000 4750 50 
+F6 "~RC_INT" I L 5000 4650 50 
+F7 "RC_MUTE" O L 5000 4900 50 
+F8 "DIAL" I R 5800 5250 50 
+$EndSheet
+Wire Wire Line
+	5000 4900 4750 4900
+Wire Wire Line
+	4750 4900 4750 3000
+Wire Wire Line
+	5000 5000 4700 5000
+Wire Wire Line
+	4700 5000 4700 3000
+Text Label 7500 2600 0    50   ~ 0
+ROUT
+Text Label 7500 3600 0    50   ~ 0
+LOUT
+Text Label 2750 2000 0    50   ~ 0
+LOUT
+Text Label 2750 2500 0    50   ~ 0
+ROUT
+Text Notes 1700 3500 0    50   ~ 0
+Rear panel
+Text Notes 9650 3750 0    50   ~ 0
+Front panel
+$Comp
+L dac:AudioJackSw J4
+U 1 1 5ED7F1B2
+P 9350 3150
+F 0 "J4" H 8972 3175 50  0000 R CNN
+F 1 "AudioJackSw" H 8972 3130 50  0001 R CNN
+F 2 "mainboard:Amphenol_ACJS-MHOM" H 8650 2650 50  0001 C CNN
+F 3 "http://www.amphenol-sine.com/pdf/datasheet/ACJS-MHOM.pdf" H 8650 2650 50  0001 C CNN
+F 4 "889-1818-ND" H 8972 3084 50  0001 R CNN "DigiKey"
+F 5 "Yes" H 9350 3150 50  0001 C CNN "Done"
+	1    9350 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3350 8700 3350
+NoConn ~ 8900 3050
+NoConn ~ 8900 3150
+Wire Notes Line
+	9350 1200 9350 2800
+Wire Notes Line
+	2250 1200 9350 1200
+Wire Notes Line
+	9350 3450 9350 5950
+Wire Notes Line
+	2250 5950 9350 5950
+Wire Wire Line
+	6100 4650 6100 3450
+Connection ~ 6100 4650
+Connection ~ 6100 3450
+Wire Wire Line
+	5800 3450 6100 3450
+Wire Wire Line
+	5800 3550 6200 3550
+Wire Wire Line
+	5800 4750 6200 4750
+Wire Wire Line
+	6100 3450 6500 3450
+Wire Wire Line
+	6200 3550 6200 4750
+Connection ~ 6200 3550
+Wire Wire Line
+	6200 3550 6500 3550
+Connection ~ 6200 4750
+Wire Wire Line
+	6100 4650 6500 4650
+Wire Wire Line
+	6650 4650 6650 4750
+Wire Wire Line
+	6200 4750 6650 4750
+Wire Wire Line
+	6500 4350 6500 4250
+Wire Wire Line
+	6500 4250 6650 4250
+Wire Wire Line
+	6650 4350 6650 4250
+Connection ~ 6650 4250
+Wire Wire Line
+	8250 2950 8500 2950
+Wire Wire Line
+	8250 3250 8700 3250
+Wire Wire Line
+	7750 2950 7500 2950
+Wire Wire Line
+	7500 2950 7500 2600
+Wire Wire Line
+	7750 3250 7500 3250
+Wire Wire Line
+	7500 3250 7500 3600
+$Comp
+L dac:P091S-FC20BR10K RV1
+U 1 1 5ED84154
+P 9250 5250
+F 0 "RV1" H 8822 5204 50  0000 R CNN
+F 1 "P091S-FC20BR10K" H 8822 5295 50  0000 R CNN
+F 2 "mainboard:P091S-FC20BR10K" H 9420 5030 50  0001 C CNN
+F 3 "https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Potentiometers/Datasheets/P09x.pdf" H 9290 5410 50  0001 C CNN
+F 4 "987-1283-ND" H 9330 4960 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 9250 5250 50  0001 C CNN "Done"
+	1    9250 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 5250 8950 5250
+Wire Wire Line
+	3800 5450 4900 5450
+Wire Wire Line
+	4900 5450 4900 5850
+Wire Wire Line
+	9250 4750 9250 5050
+Wire Wire Line
+	3800 5550 4850 5550
+Wire Wire Line
+	4850 5550 4850 5900
+Wire Wire Line
+	4850 5900 9250 5900
+Wire Wire Line
+	9250 5900 9250 5450
+Wire Wire Line
+	8800 5850 8800 4750
+Wire Wire Line
+	8800 4750 9250 4750
+Wire Wire Line
+	4900 5850 8800 5850
+Wire Wire Line
+	2250 2200 2750 2200
+Wire Wire Line
+	2250 2700 2750 2700
+Wire Wire Line
+	2450 2000 2750 2000
+Wire Wire Line
+	2450 2500 2750 2500
+$Comp
+L Connector:XLR5 #J3
+U 1 1 5EDA4882
+P 2250 5000
+F 0 "#J3" V 2296 5228 50  0000 L CNN
+F 1 "XLR5" V 2205 5228 50  0000 L CNN
+F 2 "" H 2250 5000 50  0001 C CNN
+F 3 " ~" H 2250 5000 50  0001 C CNN
+F 4 "IO-XLR5-M-EV" V 2250 5000 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 2250 5000 50  0001 C CNN "Done"
+	1    2250 5000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2250 4700
+Text Notes 600  5600 0    50   ~ 0
+Pinout chosen so that accidental \nconnection of a 5-pin XLR DC power \nconnector should not cause damage, \nthough will also not work (no 5 V rail).
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5EE2FF16
+P 2700 4700
+AR Path="/5EC7824B/5EE2FF16" Ref="J?"  Part="1" 
+AR Path="/5EE2FF16" Ref="J15"  Part="1" 
+F 0 "J15" H 2618 4612 50  0000 R CNN
+F 1 "Conn_01x01" V 2573 4612 50  0001 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 4700 50  0001 C CNN
+F 3 "~" H 2700 4700 50  0001 C CNN
+F 4 "Yes" H 2700 4700 50  0001 C CNN "Done"
+	1    2700 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5EE31BA3
+P 2700 5000
+AR Path="/5EC7824B/5EE31BA3" Ref="J?"  Part="1" 
+AR Path="/5EE31BA3" Ref="J16"  Part="1" 
+F 0 "J16" H 2618 4912 50  0000 R CNN
+F 1 "Conn_01x01" V 2573 4912 50  0001 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5000 50  0001 C CNN
+F 3 "~" H 2700 5000 50  0001 C CNN
+F 4 "Yes" H 2700 5000 50  0001 C CNN "Done"
+	1    2700 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5EE33A2C
+P 2700 5300
+AR Path="/5EC7824B/5EE33A2C" Ref="J?"  Part="1" 
+AR Path="/5EE33A2C" Ref="J17"  Part="1" 
+F 0 "J17" H 2618 5212 50  0000 R CNN
+F 1 "Conn_01x01" V 2573 5212 50  0001 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5300 50  0001 C CNN
+F 3 "~" H 2700 5300 50  0001 C CNN
+F 4 "Yes" H 2700 5300 50  0001 C CNN "Done"
+	1    2700 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5EE35FBE
+P 2700 5500
+AR Path="/5EC7824B/5EE35FBE" Ref="J?"  Part="1" 
+AR Path="/5EE35FBE" Ref="J18"  Part="1" 
+F 0 "J18" H 2618 5412 50  0000 R CNN
+F 1 "Conn_01x01" V 2573 5412 50  0001 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5500 50  0001 C CNN
+F 3 "~" H 2700 5500 50  0001 C CNN
+F 4 "Yes" H 2700 5500 50  0001 C CNN "Done"
+	1    2700 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 5000 3000 5000
+Wire Wire Line
+	2900 5300 3000 5300
+Wire Wire Line
+	2900 5500 3000 5500
+Wire Wire Line
+	2900 4700 3000 4700
+Wire Wire Line
+	2350 4700 2900 4700
+Connection ~ 2900 4700
+Wire Notes Line
+	2250 1200 2250 5950
+Wire Wire Line
+	2350 5300 2900 5300
+Connection ~ 2900 5300
+Wire Wire Line
+	2550 5000 2900 5000
+Connection ~ 2900 5000
+Wire Wire Line
+	2250 5300 2300 5300
+Wire Wire Line
+	2300 5300 2300 5500
+Wire Wire Line
+	2300 5500 2900 5500
+Connection ~ 2900 5500
+Text GLabel 8700 3500 0    50   Input ~ 0
+GND_AMP
+Wire Wire Line
+	8700 3350 8700 3500
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EE3E32B
+P 2850 6950
+F 0 "H3" H 2950 6953 50  0000 L CNN
+F 1 "MountingHole" H 2950 6908 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2850 6950 50  0001 C CNN
+F 3 "~" H 2850 6950 50  0001 C CNN
+F 4 "Yes" H 2850 6950 50  0001 C CNN "Done"
+	1    2850 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EE3E7C9
+P 2850 7450
+F 0 "H4" H 2950 7453 50  0000 L CNN
+F 1 "MountingHole" H 2950 7408 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2850 7450 50  0001 C CNN
+F 3 "~" H 2850 7450 50  0001 C CNN
+F 4 "Yes" H 2850 7450 50  0001 C CNN "Done"
+	1    2850 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EE3ECBE
+P 2500 6500
+F 0 "H1" H 2600 6503 50  0000 L CNN
+F 1 "MountingHole" H 2600 6458 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2500 6500 50  0001 C CNN
+F 3 "~" H 2500 6500 50  0001 C CNN
+F 4 "Yes" H 2500 6500 50  0001 C CNN "Done"
+	1    2500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5EE3F077
+P 2500 7450
+F 0 "H5" H 2600 7453 50  0000 L CNN
+F 1 "MountingHole" H 2600 7408 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2500 7450 50  0001 C CNN
+F 3 "~" H 2500 7450 50  0001 C CNN
+F 4 "Yes" H 2500 7450 50  0001 C CNN "Done"
+	1    2500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0121
+U 1 1 5EE68774
+P 2850 7050
+F 0 "#PWR0121" H 2850 6800 50  0001 C CNN
+F 1 "GNDD" H 2854 6895 50  0000 C CNN
+F 2 "" H 2850 7050 50  0001 C CNN
+F 3 "" H 2850 7050 50  0001 C CNN
+	1    2850 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 7550 0    50   Input ~ 0
+GND_AMP
+Text GLabel 2850 7550 2    50   Input ~ 0
+GND_AMP
+$Comp
+L power:GND #PWR0122
+U 1 1 5EE72D79
+P 2500 6600
+F 0 "#PWR0122" H 2500 6350 50  0001 C CNN
+F 1 "GND" H 2505 6427 50  0000 C CNN
+F 2 "" H 2500 6600 50  0001 C CNN
+F 3 "" H 2500 6600 50  0001 C CNN
+	1    2500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5EE96C34
+P 3350 7450
+F 0 "H6" H 3450 7453 50  0000 L CNN
+F 1 "MountingHole" H 3450 7408 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3350 7450 50  0001 C CNN
+F 3 "~" H 3350 7450 50  0001 C CNN
+F 4 "Yes" H 3350 7450 50  0001 C CNN "Done"
+	1    3350 7450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 7550 2    50   Input ~ 0
+GND_AMP
+Text Notes 1100 2350 0    50   ~ 0
+Output level:\n4 dBu (1.3 V_RMS)
+$Sheet
+S 7500 1500 800  500 
+U 5EE782C8
+F0 "Watchdog" 50
+F1 "watchdog.sch" 50
+F2 "L_AMP" I R 8300 1650 50 
+F3 "R_AMP" I R 8300 1850 50 
+F4 "L_LINE" I L 7500 1650 50 
+F5 "R_LINE" I L 7500 1850 50 
+$EndSheet
+Text Label 7250 1650 2    50   ~ 0
+LOUT
+Text Label 7250 1850 2    50   ~ 0
+ROUT
+Wire Wire Line
+	7500 1650 7250 1650
+Wire Wire Line
+	7250 1850 7500 1850
+Wire Wire Line
+	8300 1650 8700 1650
+Wire Wire Line
+	8700 1650 8700 3250
+Connection ~ 8700 3250
+Wire Wire Line
+	8700 3250 8900 3250
+Wire Wire Line
+	8300 1850 8500 1850
+Wire Wire Line
+	8500 1850 8500 2950
+Connection ~ 8500 2950
+Wire Wire Line
+	8500 2950 8900 2950
+Text Notes 4450 2650 0    50   ~ 0
+4x50 Ohm
+$EndSCHEMATC
