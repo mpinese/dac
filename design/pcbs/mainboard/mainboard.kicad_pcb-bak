@@ -809,7 +809,7 @@
       (net 91 GND))
     (pad 9 thru_hole circle (at 2.54 1.17) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask)
       (net 10 /ROUT))
-    (model C:/Users/Mark/Downloads/EC2-5NU--3DModel-STEP-56544.STEP
+    (model ${KIPRJMOD}/../lib/EC2-5NU--3DModel-STEP-56544.STEP
       (offset (xyz 0 0 0.4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -855,7 +855,7 @@
       (net 138 GND_AMP))
     (pad 9 thru_hole circle (at 2.54 1.17) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask)
       (net 37 "/Headphone Amp/ROUT"))
-    (model C:/Users/Mark/Downloads/EC2-5NU--3DModel-STEP-56544.STEP
+    (model ${KIPRJMOD}/../lib/EC2-5NU--3DModel-STEP-56544.STEP
       (offset (xyz 0 0 0.4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -1385,7 +1385,7 @@
       (net 50 "Net-(K2-Pad10)"))
     (pad 9 thru_hole circle (at 2.54 1.17) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask)
       (net 32 /PSU/+5V))
-    (model C:/Users/Mark/Downloads/EC2-5NU--3DModel-STEP-56544.STEP
+    (model ${KIPRJMOD}/../lib/EC2-5NU--3DModel-STEP-56544.STEP
       (offset (xyz 0 0 0.4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -1431,7 +1431,7 @@
       (net 54 "Net-(K1-Pad10)"))
     (pad 9 thru_hole circle (at 2.54 1.17) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask)
       (net 34 /PSU/-12V))
-    (model C:/Users/Mark/Downloads/EC2-5NU--3DModel-STEP-56544.STEP
+    (model ${KIPRJMOD}/../lib/EC2-5NU--3DModel-STEP-56544.STEP
       (offset (xyz 0 0 0.4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -1464,7 +1464,7 @@
       (net 32 /PSU/+5V))
     (pad 1 thru_hole circle (at 5 -2.5 180) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 107 GNDD))
-    (model C:/Users/Mark/Downloads/3D-Drawing-P09x/p091s-FC20BR10K.stp
+    (model ${KIPRJMOD}/../lib/p091s-FC20BR10K.stp
       (offset (xyz 1.1 0.2 6.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -90 -90))
@@ -1502,10 +1502,10 @@
       (net 35 "Net-(J10-Pad5)"))
     (pad 6 thru_hole circle (at 4.75 4.2 180) (size 3 3) (drill 1.5) (layers *.Cu *.Mask)
       (net 138 GND_AMP))
-    (model C:/Users/Mark/Downloads/ACJS-MHOM.stp
+    (model ${KIPRJMOD}/../lib/ACJS-MHOM.stp
       (offset (xyz 0.5 3 6.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 90))
+      (rotate (xyz 90 180 -90))
     )
   )
 
