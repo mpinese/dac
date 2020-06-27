@@ -18,8 +18,8 @@ L MCU_ST_STM8:STM8S003F3P U?
 U 1 1 5EC774D1
 P 4600 2950
 AR Path="/5EC774D1" Ref="U?"  Part="1" 
-AR Path="/5EC75F5F/5EC774D1" Ref="U17"  Part="1" 
-F 0 "U17" H 4650 3500 50  0000 C CNN
+AR Path="/5EC75F5F/5EC774D1" Ref="U1"  Part="1" 
+F 0 "U1" H 4650 3500 50  0000 C CNN
 F 1 "STM8S003F3P" H 4650 3400 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4650 4050 50  0001 L CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 4550 2550 50  0001 C CNN
@@ -45,8 +45,8 @@ L Device:C C?
 U 1 1 5ECD6609
 P 3900 3900
 AR Path="/5EC7811C/5ECD6609" Ref="C?"  Part="1" 
-AR Path="/5EC75F5F/5ECD6609" Ref="C81"  Part="1" 
-F 0 "C81" H 4015 3946 50  0000 L CNN
+AR Path="/5EC75F5F/5ECD6609" Ref="C1"  Part="1" 
+F 0 "C1" H 4015 3946 50  0000 L CNN
 F 1 "1u" H 4015 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 3750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 3900 3900 50  0001 C CNN
@@ -90,8 +90,8 @@ L Device:C C?
 U 1 1 5ECDAAA6
 P 3450 3900
 AR Path="/5EC7811C/5ECDAAA6" Ref="C?"  Part="1" 
-AR Path="/5EC75F5F/5ECDAAA6" Ref="C80"  Part="1" 
-F 0 "C80" H 3650 3950 50  0000 C CNN
+AR Path="/5EC75F5F/5ECDAAA6" Ref="C3"  Part="1" 
+F 0 "C3" H 3650 3950 50  0000 C CNN
 F 1 "0.1u" H 3650 3850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 3750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 3450 3900 50  0001 C CNN
@@ -118,10 +118,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 3550 4000 3550
 $Comp
-L Device:R R35
+L Device:R R8
 U 1 1 5ECDC2E9
 P 3800 2650
-F 0 "R35" V 3700 2550 50  0000 C CNN
+F 0 "R8" V 3700 2550 50  0000 C CNN
 F 1 "100" V 3700 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 2650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1000TCE_C25076.pdf" H 3800 2650 50  0001 C CNN
@@ -135,10 +135,10 @@ Wire Wire Line
 Wire Wire Line
 	3950 2750 4000 2750
 $Comp
-L Device:R R36
+L Device:R R7
 U 1 1 5ECDCFD8
 P 3800 2750
-F 0 "R36" V 3900 2650 50  0000 C CNN
+F 0 "R7" V 3900 2650 50  0000 C CNN
 F 1 "100" V 3900 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 2750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1000TCE_C25076.pdf" H 3800 2750 50  0001 C CNN
@@ -150,10 +150,10 @@ $EndComp
 Wire Wire Line
 	5600 2650 5200 2650
 $Comp
-L Connector_Generic:Conn_01x04 J10
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5ECE0AA9
 P 7700 2350
-F 0 "J10" H 7780 2342 50  0000 L CNN
+F 0 "J6" H 7780 2342 50  0000 L CNN
 F 1 "Conn_01x04" H 7780 2251 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 2350 50  0001 C CNN
 F 3 "~" H 7700 2350 50  0001 C CNN
@@ -204,10 +204,10 @@ Wire Wire Line
 Wire Wire Line
 	7400 2450 7500 2450
 $Comp
-L Device:R R33
+L Device:R R1
 U 1 1 5ECEA0DF
 P 3450 3350
-F 0 "R33" V 3550 3250 50  0000 C CNN
+F 0 "R1" V 3550 3250 50  0000 C CNN
 F 1 "10k" V 3550 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 3350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3450 3350 50  0001 C CNN
@@ -229,10 +229,10 @@ F 3 "" H 3450 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J11
+L Connector_Generic:Conn_01x04 J5
 U 1 1 5ED02B12
 P 7700 3450
-F 0 "J11" H 7780 3442 50  0000 L CNN
+F 0 "J5" H 7780 3442 50  0000 L CNN
 F 1 "Conn_01x04" H 7780 3351 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 3450 50  0001 C CNN
 F 3 "~" H 7700 3450 50  0001 C CNN
@@ -289,8 +289,8 @@ L Device:C C?
 U 1 1 5ED0751A
 P 4850 1750
 AR Path="/5EC7811C/5ED0751A" Ref="C?"  Part="1" 
-AR Path="/5EC75F5F/5ED0751A" Ref="C82"  Part="1" 
-F 0 "C82" V 5000 1850 50  0000 C CNN
+AR Path="/5EC75F5F/5ED0751A" Ref="C2"  Part="1" 
+F 0 "C2" V 5000 1850 50  0000 C CNN
 F 1 "0.1u" V 5000 1700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 1600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4850 1750 50  0001 C CNN
@@ -371,10 +371,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 3650 4000 3650
 $Comp
-L Device:R R34
+L Device:R R5
 U 1 1 5EDFF3C3
 P 3600 1950
-F 0 "R34" V 3700 1850 50  0000 C CNN
+F 0 "R5" V 3700 1850 50  0000 C CNN
 F 1 "10k" V 3700 2050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3600 1950 50  0001 C CNN
@@ -414,10 +414,10 @@ PC6
 Text Label 6000 5800 2    50   ~ 0
 PC7
 $Comp
-L Device:Jumper_NC_Small JP1
+L Device:Jumper_NC_Small JP5
 U 1 1 5EE1EEB3
 P 6650 4800
-F 0 "JP1" H 6650 4921 50  0000 C CNN
+F 0 "JP5" H 6650 4921 50  0000 C CNN
 F 1 "~" H 6650 4921 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 4800 50  0001 C CNN
 F 3 "~" H 6650 4800 50  0001 C CNN
@@ -426,10 +426,10 @@ F 4 "Yes" H 6650 4800 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP2
+L Device:Jumper_NC_Small JP9
 U 1 1 5EE21C5A
 P 6650 5050
-F 0 "JP2" H 6650 5171 50  0000 C CNN
+F 0 "JP9" H 6650 5171 50  0000 C CNN
 F 1 "~" H 6650 5171 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5050 50  0001 C CNN
 F 3 "~" H 6650 5050 50  0001 C CNN
@@ -438,10 +438,10 @@ F 4 "Yes" H 6650 5050 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP3
+L Device:Jumper_NC_Small JP8
 U 1 1 5EE21F58
 P 6650 5300
-F 0 "JP3" H 6650 5421 50  0000 C CNN
+F 0 "JP8" H 6650 5421 50  0000 C CNN
 F 1 "~" H 6650 5421 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5300 50  0001 C CNN
 F 3 "~" H 6650 5300 50  0001 C CNN
@@ -450,10 +450,10 @@ F 4 "Yes" H 6650 5300 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP4
+L Device:Jumper_NC_Small JP7
 U 1 1 5EE223DB
 P 6650 5550
-F 0 "JP4" H 6650 5671 50  0000 C CNN
+F 0 "JP7" H 6650 5671 50  0000 C CNN
 F 1 "~" H 6650 5671 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5550 50  0001 C CNN
 F 3 "~" H 6650 5550 50  0001 C CNN
@@ -462,10 +462,10 @@ F 4 "Yes" H 6650 5550 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP5
+L Device:Jumper_NC_Small JP6
 U 1 1 5EE227DC
 P 6650 5800
-F 0 "JP5" H 6650 5921 50  0000 C CNN
+F 0 "JP6" H 6650 5921 50  0000 C CNN
 F 1 "~" H 6650 5921 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 5800 50  0001 C CNN
 F 3 "~" H 6650 5800 50  0001 C CNN
@@ -502,10 +502,10 @@ Wire Wire Line
 	7600 5050 7600 4800
 Connection ~ 7600 5050
 $Comp
-L Device:R_Small R37
+L Device:R_Small R36
 U 1 1 5ECF4BBE
 P 7000 4800
-F 0 "R37" V 6900 4750 50  0000 C CNN
+F 0 "R36" V 6900 4750 50  0000 C CNN
 F 1 "~" V 6900 4900 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 4800 50  0001 C CNN
 F 3 "" H 7000 4800 50  0001 C CNN
@@ -535,10 +535,10 @@ Wire Wire Line
 Wire Wire Line
 	7100 4800 7600 4800
 $Comp
-L Device:R_Small R38
+L Device:R_Small R52
 U 1 1 5EF69D7A
 P 7000 5050
-F 0 "R38" V 6900 5000 50  0000 C CNN
+F 0 "R52" V 6900 5000 50  0000 C CNN
 F 1 "~" V 6900 5150 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5050 50  0001 C CNN
 F 3 "" H 7000 5050 50  0001 C CNN
@@ -548,10 +548,10 @@ F 5 "" V 7000 5050 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R39
+L Device:R_Small R51
 U 1 1 5EF6A1CC
 P 7000 5300
-F 0 "R39" V 6900 5250 50  0000 C CNN
+F 0 "R51" V 6900 5250 50  0000 C CNN
 F 1 "~" V 6900 5400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5300 50  0001 C CNN
 F 3 "" H 7000 5300 50  0001 C CNN
@@ -561,10 +561,10 @@ F 5 "" V 7000 5300 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R40
+L Device:R_Small R45
 U 1 1 5EF6A681
 P 7000 5550
-F 0 "R40" V 6900 5500 50  0000 C CNN
+F 0 "R45" V 6900 5500 50  0000 C CNN
 F 1 "~" V 6900 5650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5550 50  0001 C CNN
 F 3 "" H 7000 5550 50  0001 C CNN
@@ -574,10 +574,10 @@ F 5 "" V 7000 5550 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R41
+L Device:R_Small R40
 U 1 1 5EF6AA12
 P 7000 5800
-F 0 "R41" V 6900 5750 50  0000 C CNN
+F 0 "R40" V 6900 5750 50  0000 C CNN
 F 1 "~" V 6900 5900 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5800 50  0001 C CNN
 F 3 "" H 7000 5800 50  0001 C CNN

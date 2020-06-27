@@ -20,10 +20,10 @@ RIN
 Text Notes 7100 6100 0    50   ~ 0
 AKG K701 specs:\n62 ohm\n200 mW max\n105 dB SPL/V (3.56 Pa rel to 20 uPa @ 1 V)\n\n=> Imax 57 mA RMS, Vmax 3.5 V RMS\n=> max volume (at 200 mW) 116 dB\n\n1.3 Vrms as output by DAC I2V stage will give 107 dB,\nthis is fine.  Therefore just a buffer stage required.\n\nJumpers added to enable gain increase if high Z cans are used.
 $Comp
-L Amplifier_Audio:LME49600 U8
+L Amplifier_Audio:LME49600 U17
 U 1 1 5EC7A59F
 P 5300 3100
-F 0 "U8" H 5350 3350 50  0000 L CNN
+F 0 "U17" H 5350 3350 50  0000 L CNN
 F 1 "LME49600" H 5400 3200 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 3100 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lme49600.pdf" H 5300 3100 50  0001 C CNN
@@ -33,10 +33,10 @@ F 5 "Yes" H 5300 3100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Audio:LME49600 U9
+L Amplifier_Audio:LME49600 U20
 U 1 1 5EC7AD17
 P 5300 5100
-F 0 "U9" H 5350 5350 50  0000 L CNN
+F 0 "U20" H 5350 5350 50  0000 L CNN
 F 1 "LME49600" H 5350 5200 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 5100 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lme49600.pdf" H 5300 5100 50  0001 C CNN
@@ -46,10 +46,10 @@ F 5 "Yes" H 5300 5100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OPA1612AxD U7
+L Amplifier_Operational:OPA1612AxD U18
 U 1 1 5EC7D37B
 P 4300 3100
-F 0 "U7" H 4300 3467 50  0000 C CNN
+F 0 "U18" H 4300 3467 50  0000 C CNN
 F 1 "OPA1612AxD" H 4300 3376 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 4300 3100 50  0001 C CNN
@@ -59,10 +59,10 @@ F 5 "Yes" H 4300 3100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OPA1612AxD U7
+L Amplifier_Operational:OPA1612AxD U18
 U 2 1 5EC7E916
 P 4300 5100
-F 0 "U7" H 4300 5467 50  0000 C CNN
+F 0 "U18" H 4300 5467 50  0000 C CNN
 F 1 "OPA1612AxD" H 4300 5376 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 4300 5100 50  0001 C CNN
@@ -72,10 +72,10 @@ F 5 "Yes" H 4300 5100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OPA1612AxD U7
+L Amplifier_Operational:OPA1612AxD U18
 U 3 1 5EC7F6FB
 P 4100 1750
-F 0 "U7" H 4058 1796 50  0000 L CNN
+F 0 "U18" H 4058 1796 50  0000 L CNN
 F 1 "OPA1612AxD" H 4058 1705 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 1750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 4100 1750 50  0001 C CNN
@@ -95,10 +95,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 5200 3950 5200
 $Comp
-L Device:C_Small C34
+L Device:C_Small C84
 U 1 1 5EC8CA29
 P 4200 2150
-F 0 "C34" V 3971 2150 50  0000 C CNN
+F 0 "C84" V 3971 2150 50  0000 C CNN
 F 1 "0.1u" V 4062 2150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4200 2150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4200 2150 50  0001 C CNN
@@ -110,10 +110,10 @@ F 7 "Yes" H 4200 2150 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C33
+L Device:C_Small C88
 U 1 1 5EC8DF3F
 P 4200 1350
-F 0 "C33" V 3971 1350 50  0000 C CNN
+F 0 "C88" V 3971 1350 50  0000 C CNN
 F 1 "0.1u" V 4062 1350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4200 1350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4200 1350 50  0001 C CNN
@@ -147,10 +147,10 @@ Wire Wire Line
 Wire Wire Line
 	3000 3000 3100 3000
 $Comp
-L Device:C_Small C40
+L Device:C_Small C81
 U 1 1 5EC954F1
 P 5350 2750
-F 0 "C40" V 5300 2550 50  0000 C CNN
+F 0 "C81" V 5300 2550 50  0000 C CNN
 F 1 "0.1u" V 5400 2550 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 2750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5350 2750 50  0001 C CNN
@@ -162,10 +162,10 @@ F 7 "Yes" H 5350 2750 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP_Small C39
+L Device:CP_Small C83
 U 1 1 5EC95EA4
 P 5350 2600
-F 0 "C39" V 5450 2850 50  0000 C CNN
+F 0 "C83" V 5450 2850 50  0000 C CNN
 F 1 "10u" V 5350 2900 50  0000 C CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5350 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 5350 2600 50  0001 C CNN
@@ -195,10 +195,10 @@ Connection ~ 5200 2600
 Wire Wire Line
 	5200 2600 5200 2750
 $Comp
-L Device:C_Small C42
+L Device:C_Small C96
 U 1 1 5EC9BF61
 P 5350 4750
-F 0 "C42" V 5300 4550 50  0000 C CNN
+F 0 "C96" V 5300 4550 50  0000 C CNN
 F 1 "0.1u" V 5400 4550 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5350 4750 50  0001 C CNN
@@ -210,10 +210,10 @@ F 7 "Yes" H 5350 4750 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP_Small C41
+L Device:CP_Small C97
 U 1 1 5EC9BF6B
 P 5350 4600
-F 0 "C41" V 5450 4850 50  0000 C CNN
+F 0 "C97" V 5450 4850 50  0000 C CNN
 F 1 "10u" V 5350 4900 50  0000 C CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5350 4600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 5350 4600 50  0001 C CNN
@@ -247,10 +247,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 3100 5750 4000
 $Comp
-L Device:C_Small C35
+L Device:C_Small C75
 U 1 1 5ECAA82E
 P 5050 3450
-F 0 "C35" V 5200 3600 50  0000 C CNN
+F 0 "C75" V 5200 3600 50  0000 C CNN
 F 1 "0.1u" V 5100 3600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5050 3450 50  0001 C CNN
@@ -262,10 +262,10 @@ F 7 "Yes" H 5050 3450 50  0001 C CNN "Done"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP_Small C36
+L Device:CP_Small C74
 U 1 1 5ECAA838
 P 5050 3600
-F 0 "C36" V 5150 3600 50  0000 C CNN
+F 0 "C74" V 5150 3600 50  0000 C CNN
 F 1 "10u" V 5250 3600 50  0000 C CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5050 3600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 5050 3600 50  0001 C CNN
@@ -295,10 +295,10 @@ Connection ~ 5200 3600
 Wire Wire Line
 	5200 3600 5200 3550
 $Comp
-L Device:C_Small C37
+L Device:C_Small C92
 U 1 1 5ECBA7A4
 P 5050 5450
-F 0 "C37" V 5200 5600 50  0000 C CNN
+F 0 "C92" V 5200 5600 50  0000 C CNN
 F 1 "0.1u" V 5100 5600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 5450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5050 5450 50  0001 C CNN
@@ -310,10 +310,10 @@ F 7 "Yes" H 5050 5450 50  0001 C CNN "Done"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP_Small C38
+L Device:CP_Small C91
 U 1 1 5ECBA7AE
 P 5050 5600
-F 0 "C38" V 5150 5600 50  0000 C CNN
+F 0 "C91" V 5150 5600 50  0000 C CNN
 F 1 "10u" V 5250 5600 50  0000 C CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5050 5600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 5050 5600 50  0001 C CNN
@@ -367,10 +367,10 @@ LOUT
 Connection ~ 3950 6000
 Connection ~ 3950 4000
 $Comp
-L Device:R R14
+L Device:R R59
 U 1 1 5ED2BE16
 P 3700 4000
-F 0 "R14" V 3493 4000 50  0000 C CNN
+F 0 "R59" V 3493 4000 50  0000 C CNN
 F 1 "Open" V 3584 4000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 4000 50  0001 C CNN
 F 3 "" H 3700 4000 50  0001 C CNN
@@ -381,10 +381,10 @@ F 6 "Yes" H 3700 4000 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R16
+L Device:R R61
 U 1 1 5ED2C3CF
 P 4350 4000
-F 0 "R16" V 4143 4000 50  0000 C CNN
+F 0 "R61" V 4143 4000 50  0000 C CNN
 F 1 "0" V 4234 4000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 4000 50  0001 C CNN
 F 3 "" H 4350 4000 50  0001 C CNN
@@ -395,10 +395,10 @@ F 6 "Yes" H 4350 4000 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R17
+L Device:R R75
 U 1 1 5ED2CE5E
 P 4350 6000
-F 0 "R17" V 4143 6000 50  0000 C CNN
+F 0 "R75" V 4143 6000 50  0000 C CNN
 F 1 "0" V 4234 6000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 6000 50  0001 C CNN
 F 3 "" H 4350 6000 50  0001 C CNN
@@ -409,10 +409,10 @@ F 6 "Yes" H 4350 6000 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R15
+L Device:R R76
 U 1 1 5ED2DA9F
 P 3700 6000
-F 0 "R15" V 3493 6000 50  0000 C CNN
+F 0 "R76" V 3493 6000 50  0000 C CNN
 F 1 "Open" V 3584 6000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 6000 50  0001 C CNN
 F 3 "" H 3700 6000 50  0001 C CNN
@@ -435,10 +435,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 6000 5750 6000
 $Comp
-L Device:R R12
+L Device:R R60
 U 1 1 5ED747C1
 P 3500 3250
-F 0 "R12" V 3293 3250 50  0000 C CNN
+F 0 "R60" V 3293 3250 50  0000 C CNN
 F 1 "4.7k" V 3384 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 3250 50  0001 C CNN
 F 3 "" H 3500 3250 50  0001 C CNN
@@ -464,10 +464,10 @@ Wire Wire Line
 Text Notes 550  3800 0    50   ~ 0
 Note potential offset voltage of up \nto 1.2 mV due to 4.7 k resistor.\nAdding compensatory 4.7 k in feedback\nloop leads to high noise.
 $Comp
-L Device:C_Small C29
+L Device:C_Small C80
 U 1 1 5EDA31C4
 P 3200 3000
-F 0 "C29" V 2971 3000 50  0000 C CNN
+F 0 "C80" V 2971 3000 50  0000 C CNN
 F 1 "2.2u" V 3062 3000 50  0000 C CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3" H 3200 3000 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/890443325010CS.pdf" H 3200 3000 50  0001 C CNN
@@ -481,10 +481,10 @@ Connection ~ 3500 5000
 Wire Wire Line
 	3300 5000 3500 5000
 $Comp
-L Device:R R13
+L Device:R R70
 U 1 1 5EDAC893
 P 3500 5250
-F 0 "R13" V 3293 5250 50  0000 C CNN
+F 0 "R70" V 3293 5250 50  0000 C CNN
 F 1 "4.7k" V 3384 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 5250 50  0001 C CNN
 F 3 "" H 3500 5250 50  0001 C CNN
@@ -504,10 +504,10 @@ Wire Wire Line
 	5750 5100 5850 5100
 Connection ~ 5850 5100
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint TP9
 U 1 1 5ECB40D4
 P 5850 5100
-F 0 "TP3" H 5908 5218 50  0000 L CNN
+F 0 "TP9" H 5908 5218 50  0000 L CNN
 F 1 "TestPoint" H 5908 5127 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 6050 5100 50  0001 C CNN
 F 3 "~" H 6050 5100 50  0001 C CNN
@@ -516,10 +516,10 @@ F 4 "Yes" H 5850 5100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint TP8
 U 1 1 5ECB4945
 P 5850 4350
-F 0 "TP2" H 5908 4468 50  0000 L CNN
+F 0 "TP8" H 5908 4468 50  0000 L CNN
 F 1 "TestPoint" H 5908 4377 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 6050 4350 50  0001 C CNN
 F 3 "~" H 6050 4350 50  0001 C CNN
@@ -533,10 +533,10 @@ Wire Wire Line
 	5750 3100 5850 3100
 Connection ~ 5850 3100
 $Comp
-L Connector:TestPoint TP1
+L Connector:TestPoint TP5
 U 1 1 5ECB35D5
 P 5850 3100
-F 0 "TP1" H 5908 3218 50  0000 L CNN
+F 0 "TP5" H 5908 3218 50  0000 L CNN
 F 1 "TestPoint" H 5908 3127 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 6050 3100 50  0001 C CNN
 F 3 "~" H 6050 3100 50  0001 C CNN
@@ -557,10 +557,10 @@ Text GLabel 5200 5750 2    50   Input ~ 0
 Text GLabel 4000 2250 0    50   Input ~ 0
 -10V_AMP
 $Comp
-L Device:C_Small C31
+L Device:C_Small C79
 U 1 1 5EDFABAA
 P 3200 2650
-F 0 "C31" V 2971 2650 50  0000 C CNN
+F 0 "C79" V 2971 2650 50  0000 C CNN
 F 1 "2.2u" V 3062 2650 50  0000 C CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3" H 3200 2650 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/890443325010CS.pdf" H 3200 2650 50  0001 C CNN
@@ -577,10 +577,10 @@ Wire Wire Line
 	3300 2650 3300 3000
 Connection ~ 3300 3000
 $Comp
-L Device:C_Small C96
+L Device:C_Small C94
 U 1 1 5EDFFBDF
 P 3200 5000
-F 0 "C96" V 2971 5000 50  0000 C CNN
+F 0 "C94" V 2971 5000 50  0000 C CNN
 F 1 "2.2u" V 3062 5000 50  0000 C CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3" H 3200 5000 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/890443325010CS.pdf" H 3200 5000 50  0001 C CNN

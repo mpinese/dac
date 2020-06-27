@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:CP C24
+L Device:CP C15
 U 1 1 5ED0E8A6
 P 10150 1200
-F 0 "C24" H 10265 1246 50  0000 L CNN
+F 0 "C15" H 10265 1246 50  0000 L CNN
 F 1 "47u" H 10265 1155 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10188 1050 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 10150 1200 50  0001 C CNN
@@ -29,10 +29,10 @@ F 7 "Yes" H 10150 1200 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C25
+L Device:CP C12
 U 1 1 5ED212CD
 P 10150 2400
-F 0 "C25" H 9950 2500 50  0000 L CNN
+F 0 "C12" H 9950 2500 50  0000 L CNN
 F 1 "47u" H 9950 2300 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10188 2250 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 10150 2400 50  0001 C CNN
@@ -47,10 +47,10 @@ Wire Wire Line
 	10450 2600 10450 2650
 Connection ~ 10450 2600
 $Comp
-L Device:C_Small C23
+L Device:C_Small C18
 U 1 1 5ED98552
 P 9450 2500
-F 0 "C23" H 9350 2800 50  0000 L CNN
+F 0 "C18" H 9350 2800 50  0000 L CNN
 F 1 "10n" H 9350 2700 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 2350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 9450 2500 50  0001 C CNN
@@ -66,10 +66,10 @@ Wire Wire Line
 Connection ~ 9450 2400
 Connection ~ 9450 2600
 $Comp
-L Device:R_Small R10
+L Device:R_Small R18
 U 1 1 5ECCB358
 P 10450 2300
-F 0 "R10" H 10509 2346 50  0000 L CNN
+F 0 "R18" H 10509 2346 50  0000 L CNN
 F 1 "330k" H 10509 2255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 2300 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3303TCE_C25778.pdf" H 10450 2300 50  0001 C CNN
@@ -115,10 +115,10 @@ F 3 "" H 10450 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R9
+L Device:R_Small R19
 U 1 1 5ED25C27
 P 10450 2100
-F 0 "R9" H 10509 2146 50  0000 L CNN
+F 0 "R19" H 10509 2146 50  0000 L CNN
 F 1 "33k" H 10509 2055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3302TCE_C25779.pdf" H 10450 2100 50  0001 C CNN
@@ -129,10 +129,10 @@ F 6 "Yes" H 10450 2100 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R11
+L Device:R_Small R23
 U 1 1 5ED3CEA5
 P 10450 2500
-F 0 "R11" H 10509 2546 50  0000 L CNN
+F 0 "R23" H 10509 2546 50  0000 L CNN
 F 1 "120k" H 10509 2455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 2500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1203TCE_C25750.pdf" H 10450 2500 50  0001 C CNN
@@ -143,10 +143,10 @@ F 6 "Yes" H 10450 2500 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R8
+L Device:R_Small R24
 U 1 1 5ED3D667
 P 10450 1900
-F 0 "R8" H 10509 1946 50  0000 L CNN
+F 0 "R24" H 10509 1946 50  0000 L CNN
 F 1 "27k" H 10509 1855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 1900 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2702TCE_C25771.pdf" H 10450 1900 50  0001 C CNN
@@ -165,10 +165,10 @@ Text Label 3900 2700 0    50   ~ 0
 Text Label 4950 3400 0    50   ~ 0
 -12V_SW
 $Comp
-L Device:C C19
+L Device:C C7
 U 1 1 5EDC4C70
 P 8900 6100
-F 0 "C19" H 9015 6146 50  0000 L CNN
+F 0 "C7" H 9015 6146 50  0000 L CNN
 F 1 "1u" H 9015 6055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8938 5950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 8900 6100 50  0001 C CNN
@@ -180,10 +180,10 @@ F 7 "Yes" H 8900 6100 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C26
+L Device:CP C16
 U 1 1 5EDC4C7A
 P 10250 6100
-F 0 "C26" H 10365 6146 50  0000 L CNN
+F 0 "C16" H 10365 6146 50  0000 L CNN
 F 1 "100u" H 10365 6055 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10288 5950 50  0001 C CNN
 F 3 "http://www.illinoiscapacitor.com/pdf/seriesDocuments/RZM%20series.pdf" H 10250 6100 50  0001 C CNN
@@ -217,10 +217,10 @@ F 3 "" H 10550 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:TLV1117-33 U3
+L Regulator_Linear:TLV1117-33 U4
 U 1 1 5EE2E3A7
 P 9750 5950
-F 0 "U3" H 9750 6192 50  0000 C CNN
+F 0 "U4" H 9750 6192 50  0000 C CNN
 F 1 "TLV1117-33" H 9750 6101 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9750 5950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv1117.pdf" H 9750 5950 50  0001 C CNN
@@ -231,10 +231,10 @@ F 5 "Yes" H 9750 5950 50  0001 C CNN "Done"
 $EndComp
 Connection ~ 9750 6250
 $Comp
-L dac:EC2-5NU K2
+L dac:EC2-5NU K1
 U 1 1 5ED6AB66
 P 4650 3200
-F 0 "K2" H 4650 3665 50  0000 C CNN
+F 0 "K1" H 4650 3665 50  0000 C CNN
 F 1 "EC2-5NU" H 4650 3574 50  0000 C CNN
 F 2 "mainboard:RELAY_EC2-5NU" H 4650 3200 50  0001 L BNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 4650 3200 50  0001 L BNN
@@ -326,10 +326,10 @@ Connection ~ 9200 5950
 Wire Wire Line
 	9200 5950 8900 5950
 $Comp
-L Device:Jumper_NC_Small JP6
+L Device:Jumper_NC_Small JP1
 U 1 1 5EE397FA
 P 8250 6250
-F 0 "JP6" H 8250 6371 50  0000 C CNN
+F 0 "JP1" H 8250 6371 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 8250 6371 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 8250 6250 50  0001 C CNN
 F 3 "~" H 8250 6250 50  0001 C CNN
@@ -338,10 +338,10 @@ F 4 "Yes" H 8250 6250 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Connector:TestPoint TP2
 U 1 1 5EE75662
 P 10450 950
-F 0 "TP4" V 10404 1138 50  0000 L CNN
+F 0 "TP2" V 10404 1138 50  0000 L CNN
 F 1 "TestPoint" V 10495 1138 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 10650 950 50  0001 C CNN
 F 3 "~" H 10650 950 50  0001 C CNN
@@ -353,10 +353,10 @@ Connection ~ 10450 950
 Wire Wire Line
 	10450 950  10450 1000
 $Comp
-L Connector:TestPoint TP5
+L Connector:TestPoint TP3
 U 1 1 5EE766AE
 P 10450 2650
-F 0 "TP5" V 10404 2838 50  0000 L CNN
+F 0 "TP3" V 10404 2838 50  0000 L CNN
 F 1 "TestPoint" V 10495 2838 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 10650 2650 50  0001 C CNN
 F 3 "~" H 10650 2650 50  0001 C CNN
@@ -368,10 +368,10 @@ Connection ~ 10450 2650
 Wire Wire Line
 	10450 2650 10450 2750
 $Comp
-L Connector:TestPoint TP11
+L Connector:TestPoint TP1
 U 1 1 5EE776B0
 P 10550 5950
-F 0 "TP11" V 10504 6138 50  0000 L CNN
+F 0 "TP1" V 10504 6138 50  0000 L CNN
 F 1 "TestPoint" V 10595 6138 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 10750 5950 50  0001 C CNN
 F 3 "~" H 10750 5950 50  0001 C CNN
@@ -421,10 +421,10 @@ Wire Notes Line
 Wire Notes Line
 	5500 850  5500 4100
 $Comp
-L dac:TPS7A49 U4
+L dac:TPS7A49 U2
 U 1 1 5EE0C12F
 P 8850 1200
-F 0 "U4" H 8650 1650 50  0000 C CNN
+F 0 "U2" H 8650 1650 50  0000 C CNN
 F 1 "TPS7A49" H 8650 1550 50  0000 C CNN
 F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 1200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 8800 1200 50  0001 C CNN
@@ -434,10 +434,10 @@ F 5 "Yes" H 8850 1200 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dac:TPS7A30 U5
+L dac:TPS7A30 U3
 U 1 1 5EE0CF65
 P 8850 2400
-F 0 "U5" H 8850 2733 50  0000 C CNN
+F 0 "U3" H 8850 2733 50  0000 C CNN
 F 1 "TPS7A30" H 8850 2824 50  0000 C CNN
 F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 2400 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a30.pdf" H 8800 2400 50  0001 C CNN
@@ -453,10 +453,10 @@ Wire Wire Line
 Wire Wire Line
 	8250 1000 8450 1000
 $Comp
-L Device:C_Small C85
+L Device:C_Small C17
 U 1 1 5EE260B2
 P 9450 1100
-F 0 "C85" H 9350 1400 50  0000 L CNN
+F 0 "C17" H 9350 1400 50  0000 L CNN
 F 1 "10n" H 9350 1300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 9450 1100 50  0001 C CNN
@@ -472,10 +472,10 @@ Wire Wire Line
 Wire Wire Line
 	9250 1000 9450 1000
 $Comp
-L Device:C_Small C30
+L Device:C_Small C9
 U 1 1 5EE2D7DF
 P 8950 1650
-F 0 "C30" H 9050 1550 50  0000 L CNN
+F 0 "C9" H 9050 1550 50  0000 L CNN
 F 1 "10n" H 9050 1650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8988 1500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 8950 1650 50  0001 C CNN
@@ -487,10 +487,10 @@ F 7 "Yes" H 8950 1650 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R42
+L Device:R_Small R22
 U 1 1 5EE3AAE6
 P 10450 1100
-F 0 "R42" H 10509 1146 50  0000 L CNN
+F 0 "R22" H 10509 1146 50  0000 L CNN
 F 1 "120k" H 10509 1055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 1100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1203TCE_C25750.pdf" H 10450 1100 50  0001 C CNN
@@ -502,10 +502,10 @@ F 6 "Yes" H 10450 1100 50  0001 C CNN "Done"
 $EndComp
 Connection ~ 10450 1000
 $Comp
-L Device:R_Small R43
+L Device:R_Small R17
 U 1 1 5EE3B67F
 P 10450 1300
-F 0 "R43" H 10509 1346 50  0000 L CNN
+F 0 "R17" H 10509 1346 50  0000 L CNN
 F 1 "330k" H 10509 1255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 1300 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3303TCE_C25778.pdf" H 10450 1300 50  0001 C CNN
@@ -519,10 +519,10 @@ Wire Wire Line
 	9450 1200 9450 1400
 Connection ~ 9450 1200
 $Comp
-L Device:R_Small R44
+L Device:R_Small R15
 U 1 1 5EE3E84C
 P 10450 1500
-F 0 "R44" H 10509 1546 50  0000 L CNN
+F 0 "R15" H 10509 1546 50  0000 L CNN
 F 1 "33k" H 10509 1455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 1500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3302TCE_C25779.pdf" H 10450 1500 50  0001 C CNN
@@ -533,10 +533,10 @@ F 6 "Yes" H 10450 1500 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R45
+L Device:R_Small R10
 U 1 1 5EE3F23D
 P 10450 1700
-F 0 "R45" H 10509 1746 50  0000 L CNN
+F 0 "R10" H 10509 1746 50  0000 L CNN
 F 1 "27k" H 10509 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 1700 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2702TCE_C25771.pdf" H 10450 1700 50  0001 C CNN
@@ -564,10 +564,10 @@ Wire Wire Line
 	8750 1800 8950 1800
 Connection ~ 9450 1000
 $Comp
-L Device:C_Small C32
+L Device:C_Small C11
 U 1 1 5EE750E7
 P 8950 1950
-F 0 "C32" H 9050 1950 50  0000 L CNN
+F 0 "C11" H 9050 1950 50  0000 L CNN
 F 1 "10n" H 9050 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8988 1800 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 8950 1950 50  0001 C CNN
@@ -581,10 +581,10 @@ $EndComp
 Wire Wire Line
 	8950 1850 8950 1800
 $Comp
-L Device:C C89
+L Device:C C14
 U 1 1 5EE060A4
 P 9750 2400
-F 0 "C89" H 9600 2500 50  0000 L CNN
+F 0 "C14" H 9600 2500 50  0000 L CNN
 F 1 "2.2u" H 9550 2300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 9788 2250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL31B225KBHNNNE_C50254.pdf" H 9750 2400 50  0001 C CNN
@@ -619,10 +619,10 @@ Connection ~ 10150 1000
 Wire Wire Line
 	10150 1000 10450 1000
 $Comp
-L Device:C C88
+L Device:C C13
 U 1 1 5EDF39E8
 P 9750 1200
-F 0 "C88" H 9865 1246 50  0000 L CNN
+F 0 "C13" H 9865 1246 50  0000 L CNN
 F 1 "2.2u" H 9865 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 9788 1050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL31B225KBHNNNE_C50254.pdf" H 9750 1200 50  0001 C CNN
@@ -668,10 +668,10 @@ Text Label 6950 1800 2    50   ~ 0
 Text Label 6950 1000 2    50   ~ 0
 +12V_SW
 $Comp
-L Device:R R5
+L Device:R R2
 U 1 1 5ED4C56F
 P 7200 1000
-F 0 "R5" V 7100 950 50  0000 C CNN
+F 0 "R2" V 7100 950 50  0000 C CNN
 F 1 "1" V 7100 1100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 1000 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" H 7200 1000 50  0001 C CNN
@@ -681,10 +681,10 @@ F 5 "Yes" V 7200 1000 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C14
+L Device:CP C4
 U 1 1 5ED40436
 P 7650 1350
-F 0 "C14" H 7765 1396 50  0000 L CNN
+F 0 "C4" H 7765 1396 50  0000 L CNN
 F 1 "47u" H 7765 1305 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 1200 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 7650 1350 50  0001 C CNN
@@ -696,10 +696,10 @@ F 7 "Yes" H 7650 1350 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C15
+L Device:CP C5
 U 1 1 5ED3F081
 P 7650 2250
-F 0 "C15" H 7400 2350 50  0000 L CNN
+F 0 "C5" H 7400 2350 50  0000 L CNN
 F 1 "47u" H 7400 2250 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 2100 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 7650 2250 50  0001 C CNN
@@ -711,10 +711,10 @@ F 7 "Yes" H 7650 2250 50  0001 C CNN "Done"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
+L Device:C C10
 U 1 1 5ED1F040
 P 8050 2250
-F 0 "C18" H 8165 2296 50  0000 L CNN
+F 0 "C10" H 8165 2296 50  0000 L CNN
 F 1 "1u" H 8165 2205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 8050 2250 50  0001 C CNN
@@ -726,10 +726,10 @@ F 7 "Yes" H 8050 2250 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C C17
+L Device:C C8
 U 1 1 5ED0E206
 P 8050 1350
-F 0 "C17" H 8165 1396 50  0000 L CNN
+F 0 "C8" H 8165 1396 50  0000 L CNN
 F 1 "1u" H 8165 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 1200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 8050 1350 50  0001 C CNN
@@ -750,10 +750,10 @@ Connection ~ 8050 1800
 Wire Wire Line
 	8050 1800 8050 2100
 $Comp
-L Device:R R6
+L Device:R R3
 U 1 1 5ED5E5D1
 P 7200 2600
-F 0 "R6" V 7100 2550 50  0000 C CNN
+F 0 "R3" V 7100 2550 50  0000 C CNN
 F 1 "1" V 7100 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" H 7200 2600 50  0001 C CNN
@@ -768,10 +768,10 @@ Wire Wire Line
 	9450 2200 10450 2200
 Connection ~ 10450 2200
 $Comp
-L Device:CP C92
+L Device:CP C93
 U 1 1 5EF079E1
 P 10150 3750
-F 0 "C92" H 10265 3796 50  0000 L CNN
+F 0 "C93" H 10265 3796 50  0000 L CNN
 F 1 "47u" H 10265 3705 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10188 3600 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 10150 3750 50  0001 C CNN
@@ -783,10 +783,10 @@ F 7 "Yes" H 10150 3750 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C93
+L Device:CP C78
 U 1 1 5EF079EF
 P 10150 4950
-F 0 "C93" H 9950 5050 50  0000 L CNN
+F 0 "C78" H 9950 5050 50  0000 L CNN
 F 1 "47u" H 9950 4850 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10188 4800 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 10150 4950 50  0001 C CNN
@@ -801,10 +801,10 @@ Wire Wire Line
 	10450 5150 10450 5200
 Connection ~ 10450 5150
 $Comp
-L Device:C_Small C87
+L Device:C_Small C72
 U 1 1 5EF079FF
 P 9450 5050
-F 0 "C87" H 9350 5350 50  0000 L CNN
+F 0 "C72" H 9350 5350 50  0000 L CNN
 F 1 "10n" H 9350 5250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 4900 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 9450 5050 50  0001 C CNN
@@ -820,10 +820,10 @@ Wire Wire Line
 Connection ~ 9450 4950
 Connection ~ 9450 5150
 $Comp
-L Device:R_Small R52
+L Device:R_Small R54
 U 1 1 5EF07A0F
 P 10450 4850
-F 0 "R52" H 10509 4896 50  0000 L CNN
+F 0 "R54" H 10509 4896 50  0000 L CNN
 F 1 "330k" H 10509 4805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 4850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3303TCE_C25778.pdf" H 10450 4850 50  0001 C CNN
@@ -834,10 +834,10 @@ F 6 "Yes" H 10450 4850 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R51
+L Device:R_Small R57
 U 1 1 5EF07A3B
 P 10450 4650
-F 0 "R51" H 10509 4696 50  0000 L CNN
+F 0 "R57" H 10509 4696 50  0000 L CNN
 F 1 "33k" H 10509 4605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 4650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3302TCE_C25779.pdf" H 10450 4650 50  0001 C CNN
@@ -848,10 +848,10 @@ F 6 "Yes" H 10450 4650 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R53
+L Device:R_Small R55
 U 1 1 5EF07A48
 P 10450 5050
-F 0 "R53" H 10509 5096 50  0000 L CNN
+F 0 "R55" H 10509 5096 50  0000 L CNN
 F 1 "120k" H 10509 5005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 5050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1203TCE_C25750.pdf" H 10450 5050 50  0001 C CNN
@@ -862,10 +862,10 @@ F 6 "Yes" H 10450 5050 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R50
+L Device:R_Small R58
 U 1 1 5EF07A55
 P 10450 4450
-F 0 "R50" H 10509 4496 50  0000 L CNN
+F 0 "R58" H 10509 4496 50  0000 L CNN
 F 1 "27k" H 10509 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 4450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2702TCE_C25771.pdf" H 10450 4450 50  0001 C CNN
@@ -878,10 +878,10 @@ $EndComp
 Wire Wire Line
 	10450 3400 10450 3500
 $Comp
-L Connector:TestPoint TP13
+L Connector:TestPoint TP6
 U 1 1 5EF07A60
 P 10450 3500
-F 0 "TP13" V 10404 3688 50  0000 L CNN
+F 0 "TP6" V 10404 3688 50  0000 L CNN
 F 1 "TestPoint" V 10495 3688 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 10650 3500 50  0001 C CNN
 F 3 "~" H 10650 3500 50  0001 C CNN
@@ -893,10 +893,10 @@ Connection ~ 10450 3500
 Wire Wire Line
 	10450 3500 10450 3550
 $Comp
-L Connector:TestPoint TP14
+L Connector:TestPoint TP7
 U 1 1 5EF07A6C
 P 10450 5200
-F 0 "TP14" V 10404 5388 50  0000 L CNN
+F 0 "TP7" V 10404 5388 50  0000 L CNN
 F 1 "TestPoint" V 10495 5388 50  0001 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 10650 5200 50  0001 C CNN
 F 3 "~" H 10650 5200 50  0001 C CNN
@@ -922,10 +922,10 @@ F 5 "Yes" H 8850 3750 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dac:TPS7A30 U20
+L dac:TPS7A30 U16
 U 1 1 5EF07A84
 P 8850 4950
-F 0 "U20" H 8850 5283 50  0000 C CNN
+F 0 "U16" H 8850 5283 50  0000 C CNN
 F 1 "TPS7A30" H 8850 5374 50  0000 C CNN
 F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 4950 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a30.pdf" H 8800 4950 50  0001 C CNN
@@ -941,10 +941,10 @@ Wire Wire Line
 Wire Wire Line
 	8250 3550 8450 3550
 $Comp
-L Device:C_Small C86
+L Device:C_Small C87
 U 1 1 5EF07A95
 P 9450 3650
-F 0 "C86" H 9350 3950 50  0000 L CNN
+F 0 "C87" H 9350 3950 50  0000 L CNN
 F 1 "10n" H 9350 3850 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 3500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 9450 3650 50  0001 C CNN
@@ -960,10 +960,10 @@ Wire Wire Line
 Wire Wire Line
 	9250 3550 9450 3550
 $Comp
-L Device:C_Small C83
+L Device:C_Small C85
 U 1 1 5EF07AA5
 P 8950 4200
-F 0 "C83" H 9050 4100 50  0000 L CNN
+F 0 "C85" H 9050 4100 50  0000 L CNN
 F 1 "10n" H 9050 4200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8988 4050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 8950 4200 50  0001 C CNN
@@ -975,10 +975,10 @@ F 7 "Yes" H 8950 4200 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R46
+L Device:R_Small R65
 U 1 1 5EF07AB2
 P 10450 3650
-F 0 "R46" H 10509 3696 50  0000 L CNN
+F 0 "R65" H 10509 3696 50  0000 L CNN
 F 1 "120k" H 10509 3605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 3650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1203TCE_C25750.pdf" H 10450 3650 50  0001 C CNN
@@ -990,10 +990,10 @@ F 6 "Yes" H 10450 3650 50  0001 C CNN "Done"
 $EndComp
 Connection ~ 10450 3550
 $Comp
-L Device:R_Small R47
+L Device:R_Small R64
 U 1 1 5EF07AC0
 P 10450 3850
-F 0 "R47" H 10509 3896 50  0000 L CNN
+F 0 "R64" H 10509 3896 50  0000 L CNN
 F 1 "330k" H 10509 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 3850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3303TCE_C25778.pdf" H 10450 3850 50  0001 C CNN
@@ -1007,10 +1007,10 @@ Wire Wire Line
 	9450 3750 9450 3950
 Connection ~ 9450 3750
 $Comp
-L Device:R_Small R48
+L Device:R_Small R66
 U 1 1 5EF07ACF
 P 10450 4050
-F 0 "R48" H 10509 4096 50  0000 L CNN
+F 0 "R66" H 10509 4096 50  0000 L CNN
 F 1 "33k" H 10509 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 4050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF3302TCE_C25779.pdf" H 10450 4050 50  0001 C CNN
@@ -1021,10 +1021,10 @@ F 6 "Yes" H 10450 4050 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R49
+L Device:R_Small R67
 U 1 1 5EF07ADC
 P 10450 4250
-F 0 "R49" H 10509 4296 50  0000 L CNN
+F 0 "R67" H 10509 4296 50  0000 L CNN
 F 1 "27k" H 10509 4205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 10450 4250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2702TCE_C25771.pdf" H 10450 4250 50  0001 C CNN
@@ -1052,10 +1052,10 @@ Wire Wire Line
 	8750 4350 8950 4350
 Connection ~ 9450 3550
 $Comp
-L Device:C_Small C84
+L Device:C_Small C71
 U 1 1 5EF07AF4
 P 8950 4500
-F 0 "C84" H 9050 4500 50  0000 L CNN
+F 0 "C71" H 9050 4500 50  0000 L CNN
 F 1 "10n" H 9050 4550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8988 4350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 8950 4500 50  0001 C CNN
@@ -1069,10 +1069,10 @@ $EndComp
 Wire Wire Line
 	8950 4400 8950 4350
 $Comp
-L Device:C C91
+L Device:C C76
 U 1 1 5EF07B03
 P 9750 4950
-F 0 "C91" H 9600 5050 50  0000 L CNN
+F 0 "C76" H 9600 5050 50  0000 L CNN
 F 1 "2.2u" H 9550 4850 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 9788 4800 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL31B225KBHNNNE_C50254.pdf" H 9750 4950 50  0001 C CNN
@@ -1146,10 +1146,10 @@ Wire Wire Line
 	9450 5150 9750 5150
 Connection ~ 9750 5150
 $Comp
-L Device:C C21
+L Device:C C73
 U 1 1 5EF07B3C
 P 8050 4800
-F 0 "C21" H 8165 4846 50  0000 L CNN
+F 0 "C73" H 8165 4846 50  0000 L CNN
 F 1 "1u" H 8165 4755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 4650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 8050 4800 50  0001 C CNN
@@ -1161,10 +1161,10 @@ F 7 "Yes" H 8050 4800 50  0001 C CNN "Done"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C C20
+L Device:C C89
 U 1 1 5EF07B4A
 P 8050 3900
-F 0 "C20" H 8165 3946 50  0000 L CNN
+F 0 "C89" H 8165 3946 50  0000 L CNN
 F 1 "1u" H 8165 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 3750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" H 8050 3900 50  0001 C CNN
@@ -1243,10 +1243,10 @@ Wire Wire Line
 Wire Wire Line
 	8900 6250 9200 6250
 $Comp
-L Device:CP C22
+L Device:CP C86
 U 1 1 5EDFD1E9
 P 7650 3900
-F 0 "C22" H 7765 3946 50  0000 L CNN
+F 0 "C86" H 7765 3946 50  0000 L CNN
 F 1 "47u" H 7765 3855 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 3750 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 7650 3900 50  0001 C CNN
@@ -1258,10 +1258,10 @@ F 7 "Yes" H 7650 3900 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C94
+L Device:CP C77
 U 1 1 5EDFD96D
 P 7650 4800
-F 0 "C94" H 7765 4846 50  0000 L CNN
+F 0 "C77" H 7765 4846 50  0000 L CNN
 F 1 "47u" H 7765 4755 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 4650 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 7650 4800 50  0001 C CNN
@@ -1304,10 +1304,10 @@ Wire Wire Line
 Wire Wire Line
 	8400 5950 8500 5950
 $Comp
-L Device:R R7
+L Device:R R4
 U 1 1 5EDC4CCC
 P 8250 5950
-F 0 "R7" V 8150 5850 50  0000 C CNN
+F 0 "R4" V 8150 5850 50  0000 C CNN
 F 1 "1" V 8150 6000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8180 5950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" H 8250 5950 50  0001 C CNN
@@ -1317,10 +1317,10 @@ F 5 "Yes" V 8250 5950 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C13
+L Device:CP C6
 U 1 1 5EDC4CC2
 P 8500 6100
-F 0 "C13" H 8615 6146 50  0000 L CNN
+F 0 "C6" H 8615 6146 50  0000 L CNN
 F 1 "47u" H 8615 6055 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 8538 5950 50  0001 C CNN
 F 3 "https://katalog.we-online.de/pbs/datasheet/870025574002.pdf" H 8500 6100 50  0001 C CNN
@@ -1363,10 +1363,10 @@ Wire Wire Line
 Wire Wire Line
 	7050 2600 6950 2600
 $Comp
-L Device:R R57
+L Device:R R62
 U 1 1 5EFB182A
 P 7200 3550
-F 0 "R57" V 7100 3500 50  0000 C CNN
+F 0 "R62" V 7100 3500 50  0000 C CNN
 F 1 "1" V 7100 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 3550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" H 7200 3550 50  0001 C CNN
@@ -1376,10 +1376,10 @@ F 5 "Yes" V 7200 3550 50  0001 C CNN "Done"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R58
+L Device:R R56
 U 1 1 5EFBC586
 P 7200 5150
-F 0 "R58" V 7100 5100 50  0000 C CNN
+F 0 "R56" V 7100 5100 50  0000 C CNN
 F 1 "1" V 7100 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 5150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" H 7200 5150 50  0001 C CNN
@@ -2421,10 +2421,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 2350 4950 2350
 $Comp
-L dac:EC2-5NU K1
+L dac:EC2-5NU K2
 U 1 1 5ED50259
 P 4650 2250
-F 0 "K1" H 4650 2715 50  0000 C CNN
+F 0 "K2" H 4650 2715 50  0000 C CNN
 F 1 "EC2-5NU" H 4650 2624 50  0000 C CNN
 F 2 "mainboard:RELAY_EC2-5NU" H 4650 2250 50  0001 L BNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf" H 4650 2250 50  0001 L BNN
@@ -2438,10 +2438,10 @@ Wire Wire Line
 NoConn ~ 4350 2350
 NoConn ~ 4350 2450
 $Comp
-L Device:D_Small_ALT D6
+L Device:D_Small_ALT D1
 U 1 1 5EE45025
 P 4350 1550
-F 0 "D6" H 4350 1757 50  0000 C CNN
+F 0 "D1" H 4350 1757 50  0000 C CNN
 F 1 "M7" H 4350 1666 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123F" V 4350 1550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1903051030_MDD-Jiangsu-Yutai-Elec-SM4007PL_C64898.pdf" V 4350 1550 50  0001 C CNN
@@ -2471,10 +2471,10 @@ Connection ~ 4050 1550
 Wire Wire Line
 	4050 1550 4050 2050
 $Comp
-L Device:Jumper JP7
+L Device:Jumper JP2
 U 1 1 5EF0DC93
 P 6750 3550
-F 0 "JP7" H 6750 3814 50  0000 C CNN
+F 0 "JP2" H 6750 3814 50  0000 C CNN
 F 1 "Jumper" H 6750 3723 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 3550 50  0001 C CNN
 F 3 "~" H 6750 3550 50  0001 C CNN
@@ -2482,10 +2482,10 @@ F 3 "~" H 6750 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP8
+L Device:Jumper JP10
 U 1 1 5EF2C7D0
 P 6750 4350
-F 0 "JP8" H 6750 4614 50  0000 C CNN
+F 0 "JP10" H 6750 4614 50  0000 C CNN
 F 1 "Jumper" H 6750 4523 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 6750 4350 50  0001 C CNN
 F 3 "~" H 6750 4350 50  0001 C CNN
@@ -2493,10 +2493,10 @@ F 3 "~" H 6750 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP9
+L Device:Jumper JP3
 U 1 1 5EF2CC16
 P 6750 5150
-F 0 "JP9" H 6750 5414 50  0000 C CNN
+F 0 "JP3" H 6750 5414 50  0000 C CNN
 F 1 "Jumper" H 6750 5323 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 5150 50  0001 C CNN
 F 3 "~" H 6750 5150 50  0001 C CNN
@@ -2514,8 +2514,8 @@ L Device:Jumper_NC_Small JP?
 U 1 1 5EF82B26
 P 6550 5950
 AR Path="/5EC75F5F/5EF82B26" Ref="JP?"  Part="1" 
-AR Path="/5EC7824B/5EF82B26" Ref="JP10"  Part="1" 
-F 0 "JP10" H 6550 6071 50  0000 C CNN
+AR Path="/5EC7824B/5EF82B26" Ref="JP4"  Part="1" 
+F 0 "JP4" H 6550 6071 50  0000 C CNN
 F 1 "~" H 6550 6071 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6550 5950 50  0001 C CNN
 F 3 "~" H 6550 5950 50  0001 C CNN
@@ -2528,8 +2528,8 @@ L Device:R_Small R?
 U 1 1 5EF82B2F
 P 6850 5950
 AR Path="/5EC75F5F/5EF82B2F" Ref="R?"  Part="1" 
-AR Path="/5EC7824B/5EF82B2F" Ref="R76"  Part="1" 
-F 0 "R76" V 6750 5900 50  0000 C CNN
+AR Path="/5EC7824B/5EF82B2F" Ref="R29"  Part="1" 
+F 0 "R29" V 6750 5900 50  0000 C CNN
 F 1 "~" V 6750 6050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6780 5950 50  0001 C CNN
 F 3 "" H 6850 5950 50  0001 C CNN

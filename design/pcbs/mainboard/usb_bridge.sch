@@ -24,8 +24,8 @@ L Isolator:Si8645BA-B-IU U?
 U 1 1 5ECBF549
 P 6600 3750
 AR Path="/5ECBF549" Ref="U?"  Part="1" 
-AR Path="/5EC79CC1/5ECBF549" Ref="U6"  Part="1" 
-F 0 "U6" H 6600 4417 50  0000 C CNN
+AR Path="/5EC79CC1/5ECBF549" Ref="U14"  Part="1" 
+F 0 "U14" H 6600 4417 50  0000 C CNN
 F 1 "Si8645BA-B-IU" H 6600 4326 50  0000 C CNN
 F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 6600 3200 50  0001 C CIN
 F 3 "https://www.silabs.com/documents/public/data-sheets/si864x-datasheet.pdf" H 6600 4150 50  0001 C CNN
@@ -56,10 +56,10 @@ Wire Wire Line
 Wire Wire Line
 	7100 4150 7100 4250
 $Comp
-L Device:C C27
+L Device:C C60
 U 1 1 5ECC76CF
 P 5700 3150
-F 0 "C27" H 5815 3196 50  0000 L CNN
+F 0 "C60" H 5815 3196 50  0000 L CNN
 F 1 "0.1u" H 5815 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 3000 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5700 3150 50  0001 C CNN
@@ -71,10 +71,10 @@ F 7 "Yes" H 5700 3150 50  0001 C CNN "Done"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C28
+L Device:C C45
 U 1 1 5ECCB7E4
 P 7350 3350
-F 0 "C28" V 7098 3350 50  0000 C CNN
+F 0 "C45" V 7098 3350 50  0000 C CNN
 F 1 "0.1u" V 7189 3350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 7350 3350 50  0001 C CNN
@@ -181,10 +181,10 @@ Connection ~ 5700 5100
 Wire Wire Line
 	5700 5100 6000 5100
 $Comp
-L dac:Combo384 U18
+L dac:Combo384 U7
 U 1 1 5F2DBC25
 P 4600 4100
-F 0 "U18" H 4400 4250 50  0000 R CNN
+F 0 "U7" H 4400 4250 50  0000 R CNN
 F 1 "Combo384" H 4550 4150 50  0000 R CNN
 F 2 "mainboard:AmaneroCombo384" H 4800 4300 50  0001 C CNN
 F 3 "https://amanero.com/" H 4600 4100 50  0001 C CNN
