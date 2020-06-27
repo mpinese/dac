@@ -1,1 +1,4 @@
 reference
+*.kicad_pcb-bak
+*.sch-bak
+*.bck
