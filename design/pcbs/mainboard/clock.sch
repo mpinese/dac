@@ -286,6 +286,7 @@ F 1 "KC3225K24.5760C1GE00" H 3650 4000 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4750 3800 50  0001 C CNN
 F 3 "http://global.kyocera.com/prdct/electro/product/pdf/clock_k_e.pdf" H 4750 4250 50  0001 C CNN
 F 4 "1253-1407-1-ND" H 5144 4159 50  0001 L CNN "DigiKey"
+F 5 "Yes" H 4750 4250 50  0001 C CNN "Done"
 	1    4750 4250
 	1    0    0    -1  
 $EndComp

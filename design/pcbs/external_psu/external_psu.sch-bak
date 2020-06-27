@@ -306,7 +306,9 @@ P 3150 5050
 F 0 "PS2" H 3150 5515 50  0000 C CNN
 F 1 "RAC03-05SK" H 3150 5424 50  0000 C CNN
 F 2 "CONV_RAC03-05SK" H 2850 4550 50  0001 L BNN
-F 3 "Unavailable" H 3000 4400 50  0001 L BNN
+F 3 "https://www.recom-power.com/pdf/Powerline_AC-DC/RAC03-K.pdf" H 3000 4400 50  0001 L BNN
+F 4 "945-3441-ND" H 3150 5050 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 3150 5050 50  0001 C CNN "Done"
 	1    3150 5050
 	1    0    0    -1  
 $EndComp
@@ -494,10 +496,10 @@ Connection ~ 7800 3550
 Wire Wire Line
 	7800 3550 7550 3550
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector_Generic:Conn_01x03 #J1
 U 1 1 5ED1F0ED
 P 1050 3550
-F 0 "J1" H 968 3867 50  0000 C CNN
+F 0 "#J1" H 968 3867 50  0000 C CNN
 F 1 "IEC 320-C14 socket" H 968 3776 50  0000 C CNN
 F 2 "" H 1050 3550 50  0001 C CNN
 F 3 "~" H 1050 3550 50  0001 C CNN
@@ -1215,18 +1217,6 @@ EndData
 $EndBitmap
 NoConn ~ 9850 4500
 NoConn ~ 9550 4500
-$Comp
-L Connector:DIN-4 J2
-U 1 1 5EED7BCF
-P 10350 4250
-F 0 "J2" V 10304 4020 50  0000 R CNN
-F 1 "DIN-4" V 10395 4020 50  0000 R CNN
-F 2 "" H 10350 4250 50  0001 C CNN
-F 3 "https://domino2.kycon.com/website/Tools/assemblyvideos/KPPX/KPPX%20Assembly%20instruction.pdf" H 10350 4250 50  0001 C CNN
-F 4 "2092-KPPX-4P-ND" V 10350 4250 50  0001 C CNN "DigiKey"
-	1    10350 4250
-	0    -1   1    0   
-$EndComp
 Text Notes 9350 4900 0    50   ~ 0
 Ferrite bead around power \ncable on DAC end
 Text Notes 8800 4150 0    50   ~ 0
@@ -1234,24 +1224,12 @@ External wiring to DAC\n2 m 18 AWG, cables braided
 Wire Wire Line
 	7400 3250 7800 3250
 Wire Wire Line
-	10050 4150 10050 4250
-Wire Wire Line
-	10050 4350 10050 4300
-Wire Wire Line
-	10350 3950 10000 3950
-Wire Wire Line
-	10000 3950 10000 4200
-Wire Wire Line
 	8350 3350 7800 3350
 Wire Wire Line
 	7800 3350 7800 3250
 Connection ~ 7800 3250
 Wire Wire Line
 	7800 3250 7850 3250
-Wire Wire Line
-	10350 4550 10000 4550
-Wire Wire Line
-	10000 4550 10000 4350
 $Comp
 L Device:Ferrite_Bead FB1
 U 1 1 5EED238E
@@ -1261,31 +1239,12 @@ F 1 "~" H 9837 4455 50  0000 L CNN
 F 2 "" V 9630 4500 50  0001 C CNN
 F 3 "~" H 9700 4500 50  0001 C CNN
 F 4 "240-2497-ND" H 9700 4500 50  0001 C CNN "DigiKey"
+F 5 "Yes" H 9700 4500 50  0001 C CNN "Done"
 	1    9700 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7550 3550 7550 4250
-Wire Wire Line
-	8350 4200 10000 4200
-Wire Wire Line
-	8350 3350 8350 4200
-Wire Wire Line
-	7800 4300 10050 4300
-Wire Wire Line
-	7400 3850 7800 3850
-Wire Wire Line
-	10050 4250 7550 4250
-Connection ~ 7550 4250
-Wire Wire Line
-	7550 4250 7550 5250
-Wire Wire Line
 	7400 4850 7800 4850
-Wire Wire Line
-	7800 4300 7800 3850
-Connection ~ 7800 3850
-Wire Wire Line
-	7800 3850 7850 3850
 Wire Wire Line
 	7800 4350 7800 4850
 Wire Wire Line
@@ -1303,6 +1262,52 @@ Wire Notes Line
 	8700 2650 1100 2650
 Text Notes 1150 2750 0    50   ~ 0
 Enclosure
-Text Notes 8250 5400 0    50   ~ 0
-TODO: Add bushing\n(https://www.digikey.com.au/products/en/cables-wires-management/bushings-grommets/491?k=&pkeyword=&sv=0&pv716=10753&pv716=10888&pv716=12091&pv716=13319&sf=0&FV=845%7C323848%2C-8%7C491&quantity=&ColumnSort=1000011&page=1&stock=1&nstock=1&pageSize=25)
+$Comp
+L Connector:XLR5 #J?
+U 1 1 5EF8330A
+P 10350 4250
+F 0 "#J?" V 10396 4478 50  0000 L CNN
+F 1 "XLR5" V 10305 4478 50  0000 L CNN
+F 2 "" H 10350 4250 50  0001 C CNN
+F 3 "http://ioaudiotech.com/datasheet/IO-XLR5-BK.pdf" H 10350 4250 50  0001 C CNN
+F 4 "1937-1035-ND" V 10350 4250 50  0001 C CNN "DigiKey"
+F 5 "Yes" V 10350 4250 50  0001 C CNN "Done"
+	1    10350 4250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10000 4600 10350 4600
+Wire Wire Line
+	10350 4600 10350 4550
+Wire Wire Line
+	10000 4350 10000 4600
+Wire Wire Line
+	10250 4550 10050 4550
+Wire Wire Line
+	10050 4550 10050 4300
+Connection ~ 7550 4300
+Wire Wire Line
+	7550 4300 7550 5250
+Wire Wire Line
+	7550 3550 7550 4300
+Wire Wire Line
+	7550 4300 10050 4300
+Wire Wire Line
+	7400 3850 7800 3850
+Wire Wire Line
+	10050 4250 8350 4250
+Wire Wire Line
+	8350 3350 8350 4250
+Wire Wire Line
+	10250 3950 10050 3950
+Wire Wire Line
+	10050 3950 10050 4200
+Wire Wire Line
+	10050 4200 7800 4200
+Wire Wire Line
+	7800 4200 7800 3850
+Connection ~ 7800 3850
+Wire Wire Line
+	7800 3850 7850 3850
+NoConn ~ 10350 3950
 $EndSCHEMATC

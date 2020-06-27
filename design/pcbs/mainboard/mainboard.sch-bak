@@ -60,10 +60,10 @@ Wire Wire Line
 Wire Wire Line
 	4300 2900 5000 2900
 $Comp
-L Device:R R1
+L Device:R R9
 U 1 1 5ECF9309
 P 6500 4500
-F 0 "R1" H 6650 4450 50  0000 C CNN
+F 0 "R9" H 6650 4450 50  0000 C CNN
 F 1 "2.7k" H 6650 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6430 4500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6500 4500 50  0001 C CNN
@@ -74,10 +74,10 @@ F 6 "Pullup" H 6500 4500 50  0001 C CNN "Function"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R2
+L Device:R R6
 U 1 1 5ECF9BAA
 P 6650 4500
-F 0 "R2" H 6500 4450 50  0000 C CNN
+F 0 "R6" H 6500 4450 50  0000 C CNN
 F 1 "2.7k" H 6500 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6580 4500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6650 4500 50  0001 C CNN
@@ -143,10 +143,10 @@ F 3 "" H 2750 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J2
+L Connector:Conn_Coaxial J7
 U 1 1 5ECDAB0B
 P 2250 2500
-F 0 "J2" H 2350 2475 50  0000 L CNN
+F 0 "J7" H 2350 2475 50  0000 L CNN
 F 1 "Conn_Coaxial" H 2350 2384 50  0001 L CNN
 F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2250 2500 50  0001 C CNN
 F 3 "~" H 2250 2500 50  0001 C CNN
@@ -156,10 +156,10 @@ F 5 "Yes" H 2250 2500 50  0001 C CNN "Done"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J1
+L Connector:Conn_Coaxial J8
 U 1 1 5ECD9A3B
 P 2250 2000
-F 0 "J1" H 2350 1929 50  0000 L CNN
+F 0 "J8" H 2350 1929 50  0000 L CNN
 F 1 "Conn_Coaxial" H 2350 1884 50  0001 L CNN
 F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2250 2000 50  0001 C CNN
 F 3 "~" H 2250 2000 50  0001 C CNN
@@ -286,10 +286,10 @@ Rear panel
 Text Notes 9650 3750 0    50   ~ 0
 Front panel
 $Comp
-L dac:AudioJackSw J4
+L dac:AudioJackSw J10
 U 1 1 5ED7F1B2
 P 9350 3150
-F 0 "J4" H 8972 3175 50  0000 R CNN
+F 0 "J10" H 8972 3175 50  0000 R CNN
 F 1 "AudioJackSw" H 8972 3130 50  0001 R CNN
 F 2 "mainboard:Amphenol_ACJS-MHOM" H 8650 2650 50  0001 C CNN
 F 3 "http://www.amphenol-sine.com/pdf/datasheet/ACJS-MHOM.pdf" H 8650 2650 50  0001 C CNN
@@ -417,8 +417,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE2FF16
 P 2700 4700
 AR Path="/5EC7824B/5EE2FF16" Ref="J?"  Part="1" 
-AR Path="/5EE2FF16" Ref="J15"  Part="1" 
-F 0 "J15" H 2618 4612 50  0000 R CNN
+AR Path="/5EE2FF16" Ref="J2"  Part="1" 
+F 0 "J2" H 2618 4612 50  0000 R CNN
 F 1 "Conn_01x01" V 2573 4612 50  0001 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 4700 50  0001 C CNN
 F 3 "~" H 2700 4700 50  0001 C CNN
@@ -431,8 +431,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE31BA3
 P 2700 5000
 AR Path="/5EC7824B/5EE31BA3" Ref="J?"  Part="1" 
-AR Path="/5EE31BA3" Ref="J16"  Part="1" 
-F 0 "J16" H 2618 4912 50  0000 R CNN
+AR Path="/5EE31BA3" Ref="J1"  Part="1" 
+F 0 "J1" H 2618 4912 50  0000 R CNN
 F 1 "Conn_01x01" V 2573 4912 50  0001 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5000 50  0001 C CNN
 F 3 "~" H 2700 5000 50  0001 C CNN
@@ -445,8 +445,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE33A2C
 P 2700 5300
 AR Path="/5EC7824B/5EE33A2C" Ref="J?"  Part="1" 
-AR Path="/5EE33A2C" Ref="J17"  Part="1" 
-F 0 "J17" H 2618 5212 50  0000 R CNN
+AR Path="/5EE33A2C" Ref="J3"  Part="1" 
+F 0 "J3" H 2618 5212 50  0000 R CNN
 F 1 "Conn_01x01" V 2573 5212 50  0001 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5300 50  0001 C CNN
 F 3 "~" H 2700 5300 50  0001 C CNN
@@ -459,8 +459,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5EE35FBE
 P 2700 5500
 AR Path="/5EC7824B/5EE35FBE" Ref="J?"  Part="1" 
-AR Path="/5EE35FBE" Ref="J18"  Part="1" 
-F 0 "J18" H 2618 5412 50  0000 R CNN
+AR Path="/5EE35FBE" Ref="J4"  Part="1" 
+F 0 "J4" H 2618 5412 50  0000 R CNN
 F 1 "Conn_01x01" V 2573 5412 50  0001 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 2700 5500 50  0001 C CNN
 F 3 "~" H 2700 5500 50  0001 C CNN
@@ -499,10 +499,10 @@ GND_AMP
 Wire Wire Line
 	8700 3350 8700 3500
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Mechanical:MountingHole_Pad H2
 U 1 1 5EE3E32B
 P 2850 6950
-F 0 "H3" H 2950 6953 50  0000 L CNN
+F 0 "H2" H 2950 6953 50  0000 L CNN
 F 1 "MountingHole" H 2950 6908 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2850 6950 50  0001 C CNN
 F 3 "~" H 2850 6950 50  0001 C CNN
@@ -573,10 +573,10 @@ F 3 "" H 2500 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H6
+L Mechanical:MountingHole_Pad H3
 U 1 1 5EE96C34
 P 3350 7450
-F 0 "H6" H 3450 7453 50  0000 L CNN
+F 0 "H3" H 3450 7453 50  0000 L CNN
 F 1 "MountingHole" H 3450 7408 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3350 7450 50  0001 C CNN
 F 3 "~" H 3350 7450 50  0001 C CNN

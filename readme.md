@@ -1,4 +1,4 @@
-# (Almost) No Compromise USB Stereo DAC
+# An (Almost) No Compromise USB Stereo DAC
 
 This project describes the hardware and firmware for a high-quality DIY USB stereo digital to analogue converter (DAC) with optional integrated digital volume control and headphone amplifier.
 
@@ -80,4 +80,6 @@ Components:
 
 ## Licence
 
-MIT
+Hardware designs (schematics, PCB layouts, and enclosure plans), software, and documentation are licensed for reuse under the Creative Commons Attribution 4.0 Licence (CC BY 4.0). For more details on this licence, visit https://creativecommons.org/licenses/by/4.0/.
+
+Component models (3D and 2D) under the design/pcbs/lib directory, and simulation models (`*.s*p`, `*.lib`, `*.tld`, `*.TSM` under the simulations directory) remain the property of their creators and are not covered by this CC BY 4.0 licence.
