@@ -358,12 +358,12 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR0111
 U 1 1 5ED39D61
-P 7800 5950
-F 0 "#PWR0111" H 7800 5700 50  0001 C CNN
-F 1 "GNDD" H 7804 5795 50  0000 C CNN
-F 2 "" H 7800 5950 50  0001 C CNN
-F 3 "" H 7800 5950 50  0001 C CNN
-	1    7800 5950
+P 7600 5950
+F 0 "#PWR0111" H 7600 5700 50  0001 C CNN
+F 1 "GNDD" H 7604 5795 50  0000 C CNN
+F 2 "" H 7600 5950 50  0001 C CNN
+F 3 "" H 7600 5950 50  0001 C CNN
+	1    7600 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -473,160 +473,10 @@ F 4 "Yes" H 6650 5800 50  0001 C CNN "Done"
 	1    6650 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5EE2EA58
-P 6250 4800
-F 0 "TP6" H 6308 4872 50  0000 L CNN
-F 1 "~" H 6308 4827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 4800 50  0001 C CNN
-F 3 "~" H 6450 4800 50  0001 C CNN
-F 4 "Yes" H 6250 4800 50  0001 C CNN "Done"
-	1    6250 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5EE2FA33
-P 6250 5050
-F 0 "TP7" H 6308 5122 50  0000 L CNN
-F 1 "~" H 6308 5077 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5050 50  0001 C CNN
-F 3 "~" H 6450 5050 50  0001 C CNN
-F 4 "Yes" H 6250 5050 50  0001 C CNN "Done"
-	1    6250 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4800 6250 4800
-Wire Wire Line
-	6000 5300 6250 5300
-Wire Wire Line
-	6000 5550 6250 5550
-Wire Wire Line
-	6000 5800 6250 5800
-Connection ~ 6250 4800
-Wire Wire Line
-	6250 4800 6550 4800
-Connection ~ 6250 5050
-Wire Wire Line
-	6250 5050 6000 5050
-Wire Wire Line
-	6250 5050 6550 5050
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5EE3B2A1
-P 6250 5300
-F 0 "TP8" H 6308 5372 50  0000 L CNN
-F 1 "~" H 6308 5327 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5300 50  0001 C CNN
-F 3 "~" H 6450 5300 50  0001 C CNN
-F 4 "Yes" H 6250 5300 50  0001 C CNN "Done"
-	1    6250 5300
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 5300
-Wire Wire Line
-	6250 5300 6550 5300
-$Comp
-L Connector:TestPoint TP9
-U 1 1 5EE3B777
-P 6250 5550
-F 0 "TP9" H 6308 5622 50  0000 L CNN
-F 1 "~" H 6308 5577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5550 50  0001 C CNN
-F 3 "~" H 6450 5550 50  0001 C CNN
-F 4 "Yes" H 6250 5550 50  0001 C CNN "Done"
-	1    6250 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 5550
-Wire Wire Line
-	6250 5550 6550 5550
-$Comp
-L Connector:TestPoint TP10
-U 1 1 5EE3BB7E
-P 6250 5800
-F 0 "TP10" H 6308 5872 50  0000 L CNN
-F 1 "~" H 6308 5827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 5800 50  0001 C CNN
-F 3 "~" H 6450 5800 50  0001 C CNN
-F 4 "Yes" H 6250 5800 50  0001 C CNN "Done"
-	1    6250 5800
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 5800
-Wire Wire Line
-	6250 5800 6550 5800
 Text HLabel 5600 2750 2    50   Input ~ 0
 DIAL
 Wire Wire Line
 	5200 2750 5600 2750
-$Comp
-L Device:LED_Small D1
-U 1 1 5ECF4563
-P 7450 4800
-F 0 "D1" H 7550 4700 50  0000 C CNN
-F 1 "Red" H 7300 4700 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7450 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7450 4800 50  0001 C CNN
-F 4 "C2286" H 7450 4800 50  0001 C CNN "LCSC"
-F 5 "Yes" H 7450 4800 50  0001 C CNN "Done"
-	1    7450 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D2
-U 1 1 5ED36D34
-P 7450 5050
-F 0 "D2" H 7550 4950 50  0000 C CNN
-F 1 "Yellow" H 7300 4950 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf" V 7450 5050 50  0001 C CNN
-F 4 "C72038" H 7450 5050 50  0001 C CNN "LCSC"
-F 5 "Yes" H 7450 5050 50  0001 C CNN "Done"
-	1    7450 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D3
-U 1 1 5ED38293
-P 7450 5300
-F 0 "D3" H 7550 5200 50  0000 C CNN
-F 1 "Green" H 7300 5200 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5300 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf" V 7450 5300 50  0001 C CNN
-F 4 "C72043" H 7450 5300 50  0001 C CNN "LCSC"
-F 5 "Yes" H 7450 5300 50  0001 C CNN "Done"
-	1    7450 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D4
-U 1 1 5ED2A9FD
-P 7450 5550
-F 0 "D4" H 7550 5450 50  0000 C CNN
-F 1 "Blue" H 7300 5450 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" V 7450 5550 50  0001 C CNN
-F 4 "C72041" H 7450 5550 50  0001 C CNN "LCSC"
-F 5 "Yes" H 7450 5550 50  0001 C CNN "Done"
-	1    7450 5550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D5
-U 1 1 5EE124F0
-P 7450 5800
-F 0 "D5" H 7550 5700 50  0000 C CNN
-F 1 "White" H 7300 5700 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 7450 5800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-0603White-light-173-207mcd_C2290.pdf" V 7450 5800 50  0001 C CNN
-F 4 "C2290" H 7450 5800 50  0001 C CNN "LCSC"
-F 5 "Yes" H 7450 5800 50  0001 C CNN "Done"
-	1    7450 5800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6750 5550 6900 5550
 Wire Wire Line
@@ -638,125 +488,102 @@ Wire Wire Line
 Wire Wire Line
 	6900 5800 6750 5800
 Wire Wire Line
-	7800 5800 7800 5950
-Connection ~ 7800 5800
+	7600 5800 7600 5950
+Connection ~ 7600 5800
 Wire Wire Line
-	7550 5800 7800 5800
+	7600 5550 7600 5800
+Connection ~ 7600 5550
 Wire Wire Line
-	7100 5800 7350 5800
-$Comp
-L Device:R_Small R41
-U 1 1 5EE129C7
-P 7000 5800
-F 0 "R41" V 6900 5750 50  0000 C CNN
-F 1 "33" V 6900 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF330JTCE_C25105.pdf" H 7000 5800 50  0001 C CNN
-F 4 "C25105" V 7000 5800 50  0001 C CNN "LCSC"
-F 5 "Yes" V 7000 5800 50  0001 C CNN "Done"
-	1    7000 5800
-	0    1    1    0   
-$EndComp
+	7600 5550 7600 5300
+Connection ~ 7600 5300
 Wire Wire Line
-	7800 5550 7800 5800
-Connection ~ 7800 5550
+	7600 5300 7600 5050
 Wire Wire Line
-	7550 5550 7800 5550
-Wire Wire Line
-	7800 5550 7800 5300
-Connection ~ 7800 5300
-Wire Wire Line
-	7550 5300 7800 5300
-Wire Wire Line
-	7800 5300 7800 5050
-Wire Wire Line
-	7800 5050 7800 4800
-Connection ~ 7800 5050
-Wire Wire Line
-	7550 5050 7800 5050
-Wire Wire Line
-	7800 4800 7550 4800
-Wire Wire Line
-	7100 5050 7350 5050
-$Comp
-L Device:R_Small R38
-U 1 1 5ED3829F
-P 7000 5050
-F 0 "R38" V 6900 5000 50  0000 C CNN
-F 1 "220" V 6900 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2200TCE_C25091.pdf" H 7000 5050 50  0001 C CNN
-F 4 "C25091" V 7000 5050 50  0001 C CNN "LCSC"
-F 5 "Yes" V 7000 5050 50  0001 C CNN "Done"
-	1    7000 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 5300 7100 5300
-$Comp
-L Device:R_Small R39
-U 1 1 5ED36D29
-P 7000 5300
-F 0 "R39" V 6900 5250 50  0000 C CNN
-F 1 "33" V 6900 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5300 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF330JTCE_C25105.pdf" H 7000 5300 50  0001 C CNN
-F 4 "C25105" V 7000 5300 50  0001 C CNN "LCSC"
-F 5 "Yes" V 7000 5300 50  0001 C CNN "Done"
-	1    7000 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 5550 7100 5550
-Wire Wire Line
-	7100 4800 7350 4800
-$Comp
-L Device:R_Small R40
-U 1 1 5ED22AB6
-P 7000 5550
-F 0 "R40" V 6900 5500 50  0000 C CNN
-F 1 "47" V 6900 5650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 5550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF470JTCE_C25118.pdf" H 7000 5550 50  0001 C CNN
-F 4 "C25118" V 7000 5550 50  0001 C CNN "LCSC"
-F 5 "Yes" V 7000 5550 50  0001 C CNN "Done"
-	1    7000 5550
-	0    1    1    0   
-$EndComp
+	7600 5050 7600 4800
+Connection ~ 7600 5050
 $Comp
 L Device:R_Small R37
 U 1 1 5ECF4BBE
 P 7000 4800
 F 0 "R37" V 6900 4750 50  0000 C CNN
-F 1 "220" V 6900 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2200TCE_C25091.pdf" H 7000 4800 50  0001 C CNN
-F 4 "C25091" V 7000 4800 50  0001 C CNN "LCSC"
-F 5 "Yes" V 7000 4800 50  0001 C CNN "Done"
+F 1 "~" V 6900 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 4800 50  0001 C CNN
+F 3 "" H 7000 4800 50  0001 C CNN
+F 4 "" V 7000 4800 50  0001 C CNN "LCSC"
+F 5 "" V 7000 4800 50  0001 C CNN "Done"
 	1    7000 4800
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6000 4800 6550 4800
+Wire Wire Line
+	6000 5050 6550 5050
+Wire Wire Line
+	6000 5300 6550 5300
+Wire Wire Line
+	6000 5550 6550 5550
+Wire Wire Line
+	6000 5800 6550 5800
+Wire Wire Line
+	7100 5800 7600 5800
+Wire Wire Line
+	7100 5550 7600 5550
+Wire Wire Line
+	7100 5300 7600 5300
+Wire Wire Line
+	7100 5050 7600 5050
+Wire Wire Line
+	7100 4800 7600 4800
 $Comp
-L power:GNDD #PWR?
-U 1 1 5EF1AF42
-P 6250 6100
-F 0 "#PWR?" H 6250 5850 50  0001 C CNN
-F 1 "GNDD" H 6254 5945 50  0000 C CNN
-F 2 "" H 6250 6100 50  0001 C CNN
-F 3 "" H 6250 6100 50  0001 C CNN
-	1    6250 6100
-	1    0    0    -1  
+L Device:R_Small R38
+U 1 1 5EF69D7A
+P 7000 5050
+F 0 "R38" V 6900 5000 50  0000 C CNN
+F 1 "~" V 6900 5150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5050 50  0001 C CNN
+F 3 "" H 7000 5050 50  0001 C CNN
+F 4 "" V 7000 5050 50  0001 C CNN "LCSC"
+F 5 "" V 7000 5050 50  0001 C CNN "Done"
+	1    7000 5050
+	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5EF1B7A1
-P 6250 6100
-F 0 "TP?" H 6308 6172 50  0000 L CNN
-F 1 "~" H 6308 6127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6450 6100 50  0001 C CNN
-F 3 "~" H 6450 6100 50  0001 C CNN
-F 4 "Yes" H 6250 6100 50  0001 C CNN "Done"
-	1    6250 6100
-	1    0    0    -1  
+L Device:R_Small R39
+U 1 1 5EF6A1CC
+P 7000 5300
+F 0 "R39" V 6900 5250 50  0000 C CNN
+F 1 "~" V 6900 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5300 50  0001 C CNN
+F 3 "" H 7000 5300 50  0001 C CNN
+F 4 "" V 7000 5300 50  0001 C CNN "LCSC"
+F 5 "" V 7000 5300 50  0001 C CNN "Done"
+	1    7000 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R40
+U 1 1 5EF6A681
+P 7000 5550
+F 0 "R40" V 6900 5500 50  0000 C CNN
+F 1 "~" V 6900 5650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5550 50  0001 C CNN
+F 3 "" H 7000 5550 50  0001 C CNN
+F 4 "" V 7000 5550 50  0001 C CNN "LCSC"
+F 5 "" V 7000 5550 50  0001 C CNN "Done"
+	1    7000 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R41
+U 1 1 5EF6AA12
+P 7000 5800
+F 0 "R41" V 6900 5750 50  0000 C CNN
+F 1 "~" V 6900 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6930 5800 50  0001 C CNN
+F 3 "" H 7000 5800 50  0001 C CNN
+F 4 "" V 7000 5800 50  0001 C CNN "LCSC"
+F 5 "" V 7000 5800 50  0001 C CNN "Done"
+	1    7000 5800
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

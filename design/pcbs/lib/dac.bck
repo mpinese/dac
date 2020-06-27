@@ -27,6 +27,11 @@ $CMP EC2-5NU
 F https://api.kemet.com/component-edge/download/datasheet/EC2-5NU.pdf
 $ENDCMP
 #
+$CMP KC3225K24.5760C1GE00
+D 24.576 MHz oscillator
+F http://global.kyocera.com/prdct/electro/product/pdf/clock_k_e.pdf
+$ENDCMP
+#
 $CMP LT1028
 F https://www.analog.com/media/en/technical-documentation/data-sheets/1028fd.pdf
 $ENDCMP

@@ -16,19 +16,6 @@ $EndDescr
 Text HLabel 7000 4250 2    50   Output ~ 0
 MCLK1
 $Comp
-L dac:CCHD-575 U15
-U 1 1 5ECD281C
-P 4750 4250
-F 0 "U15" H 4250 4750 50  0000 R CNN
-F 1 "CCHD-575" H 4550 4650 50  0000 R CNN
-F 2 "mainboard:CCHD-575" H 4750 4250 50  0001 C CNN
-F 3 "https://www.crystek.com/crystal/spec-sheets/clock/CCHD-575.pdf" H 4750 4250 50  0001 C CNN
-F 4 "744-1747-ND" H 4750 4250 50  0001 C CNN "DigiKey"
-F 5 "Yes" H 4750 4250 50  0001 C CNN "Done"
-	1    4750 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C77
 U 1 1 5ECD2BD1
 P 5000 3800
@@ -46,14 +33,12 @@ $EndComp
 Wire Wire Line
 	4850 3800 4750 3800
 Wire Wire Line
-	4750 3800 4750 3900
-Wire Wire Line
 	5150 3800 5250 3800
 Wire Wire Line
 	5250 3800 5250 3950
 Wire Wire Line
 	5500 4250 5100 4250
-Text Notes 5050 4350 0    50   ~ 0
+Text Notes 5100 4350 0    50   ~ 0
 24.576 MHz
 $Comp
 L power:+3.3V #PWR094
@@ -170,8 +155,6 @@ Wire Wire Line
 	5950 3000 5950 3200
 Wire Wire Line
 	5950 3400 5950 3450
-Text Notes 7450 2750 0    50   ~ 0
-Bypass caps are good
 $Comp
 L Device:C C76
 U 1 1 5ECEC618
@@ -294,4 +277,27 @@ F 3 "" H 6500 4000 50  0001 C CNN
 	1    6500 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L dac:KC3225K24.5760C1GE00 U15
+U 1 1 5EF5DFBA
+P 4750 4250
+F 0 "U15" H 4800 4500 50  0000 L CNN
+F 1 "KC3225K24.5760C1GE00" H 3650 4000 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4750 3800 50  0001 C CNN
+F 3 "http://global.kyocera.com/prdct/electro/product/pdf/clock_k_e.pdf" H 4750 4250 50  0001 C CNN
+F 4 "1253-1407-1-ND" H 5144 4159 50  0001 L CNN "DigiKey"
+	1    4750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3800 4750 3900
+Wire Wire Line
+	4750 4550 4750 4600
+Wire Wire Line
+	4400 4250 4400 3900
+Wire Wire Line
+	4400 3900 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	4750 3900 4750 3950
 $EndSCHEMATC
