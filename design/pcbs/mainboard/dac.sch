@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -3634,6 +3634,7 @@ F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 2750 5750 
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 2750 5750 50  0001 C CNN
 F 4 "296-27751-1-ND" H 2800 5750 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 2800 5750 50  0001 C CNN "Done"
+F 6 "C16430" H 2800 5750 50  0001 C CNN "LCSC"
 	1    2800 5750
 	1    0    0    -1  
 $EndComp

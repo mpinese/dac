@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr

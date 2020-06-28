@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -430,6 +430,7 @@ F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 1200 
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 8800 1200 50  0001 C CNN
 F 4 "296-27751-1-ND" H 8850 1200 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8850 1200 50  0001 C CNN "Done"
+F 6 "C16430" H 8850 1200 50  0001 C CNN "LCSC"
 	1    8850 1200
 	1    0    0    -1  
 $EndComp
@@ -443,6 +444,7 @@ F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 2400 
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a30.pdf" H 8800 2400 50  0001 C CNN
 F 4 "296-27750-1-ND" H 8850 2400 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8850 2400 50  0001 C CNN "Done"
+F 6 "C33835" H 8850 2400 50  0001 C CNN "LCSC"
 	1    8850 2400
 	1    0    0    1   
 $EndComp
@@ -918,6 +920,7 @@ F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 3750 
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 8800 3750 50  0001 C CNN
 F 4 "296-27751-1-ND" H 8850 3750 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8850 3750 50  0001 C CNN "Done"
+F 6 "C16430" H 8850 3750 50  0001 C CNN "LCSC"
 	1    8850 3750
 	1    0    0    -1  
 $EndComp
@@ -931,6 +934,7 @@ F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm_ThermalVias" H 8800 4950 
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a30.pdf" H 8800 4950 50  0001 C CNN
 F 4 "296-27750-1-ND" H 8850 4950 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8850 4950 50  0001 C CNN "Done"
+F 6 "C33835" H 8850 4950 50  0001 C CNN "LCSC"
 	1    8850 4950
 	1    0    0    1   
 $EndComp

@@ -83,3 +83,5 @@ Components:
 Hardware designs (schematics, PCB layouts, and enclosure plans), software, and documentation are licensed for reuse under the Creative Commons Attribution 4.0 Licence (CC BY 4.0). For more details on this licence, visit https://creativecommons.org/licenses/by/4.0/.
 
 Component models (3D and 2D) under the design/pcbs/lib directory, and simulation models (`*.s*p`, `*.lib`, `*.tld`, `*.TSM` under the simulations directory) remain the property of their creators and are not covered by this CC BY 4.0 licence.
+
+The Kicad BOM template bom2grouped_csv_jlcpcb.xsl was created bt arturo182, see https://gist.github.com/arturo182/a8c4a4b96907cfccf616a1edb59d0389.

@@ -1,0 +1,15 @@
+Comment,Designator,Footprint
+Optional,"FB1,FB2",Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+MountingHole,"H2,H4,H1,H5,H3",MountingHole:MountingHole_3.2mm_M3_Pad_Via
+Conn_01x01,"J2,J1,J3,J4",Connector_Wire:SolderWirePad_1x01_Drill1.5mm
+Conn_01x04,"J6,J5",Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+Conn_01x03,J9,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+Jumper_NC_Small,JP1,Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
+Jumper,JP10,Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
+Jumper,"JP2,JP3",Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+~,"JP4,JP5,JP9,JP8,JP7,JP6",Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+Optional,"R29,R36,R52,R51,R45,R40",Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
+Open,"R59,R76",Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+0,"R61,R75",Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+TestPoint,"TP2,TP3,TP1,TP6,TP7,TP9,TP8,TP5,TP4",TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm
+Combo384,U7,mainboard:AmaneroCombo384

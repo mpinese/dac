@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 External PSU"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -629,82 +629,10 @@ F 3 "~" H 2300 3350 50  0001 C CNN
 	1    2100 3350
 	0    -1   -1   0   
 $EndComp
-Text Notes 7400 7500 0    50   ~ 0
-DAC1 External PSU
 Text Notes 10600 7650 0    50   ~ 0
 1.0.0
-Text Notes 8150 7650 0    50   ~ 0
-20200530
-Text Notes 7300 7250 0    50   ~ 0
-1
-Text Notes 7400 7250 0    50   ~ 0
-1
-Text Notes 7000 7100 0    50   ~ 0
-This work is licensed under CC BY-SA 4.0.\nTo view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0
-Text Notes 9100 7650 0    50   ~ 0
-Author: Mark Pinese
 Text Notes 850  3850 0    50   ~ 0
 Panel mounted
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5ED7EA2A
-P 3850 3250
-F 0 "TP1" H 3908 3322 50  0000 L CNN
-F 1 "TestPoint" H 3908 3277 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4050 3250 50  0001 C CNN
-F 3 "~" H 4050 3250 50  0001 C CNN
-	1    3850 3250
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 3250
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5ED8021F
-P 3850 3550
-F 0 "TP2" H 3908 3622 50  0000 L CNN
-F 1 "TestPoint" H 3908 3577 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4050 3550 50  0001 C CNN
-F 3 "~" H 4050 3550 50  0001 C CNN
-	1    3850 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 3550
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5ED8096F
-P 3850 3750
-F 0 "TP3" H 3908 3822 50  0000 L CNN
-F 1 "TestPoint" H 3908 3777 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4050 3750 50  0001 C CNN
-F 3 "~" H 4050 3750 50  0001 C CNN
-	1    3850 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 3750
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5ED80DD9
-P 3850 5250
-F 0 "TP5" H 3908 5322 50  0000 L CNN
-F 1 "TestPoint" H 3908 5277 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4050 5250 50  0001 C CNN
-F 3 "~" H 4050 5250 50  0001 C CNN
-	1    3850 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5ED815D8
-P 3850 4850
-F 0 "TP4" H 3908 4922 50  0000 L CNN
-F 1 "TestPoint" H 3908 4877 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4050 4850 50  0001 C CNN
-F 3 "~" H 4050 4850 50  0001 C CNN
-	1    3850 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 4850
-Connection ~ 3850 5250
 $Bitmap
 Pos 10050 1500
 Scale 1.000000

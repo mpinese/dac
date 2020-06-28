@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -157,6 +157,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1100 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 1100 1600 50  0001 C CNN
 F 4 "296-39098-1-ND" H 1100 1600 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 1100 1600 50  0001 C CNN "Done"
+F 6 "C94590" H 1100 1600 50  0001 C CNN "LCSC"
 	3    1100 1600
 	1    0    0    -1  
 $EndComp
@@ -170,6 +171,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2100 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 2100 1600 50  0001 C CNN
 F 4 "296-39098-1-ND" H 2100 1600 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 2100 1600 50  0001 C CNN "Done"
+F 6 "C94590" H 2100 1600 50  0001 C CNN "LCSC"
 	3    2100 1600
 	1    0    0    -1  
 $EndComp
@@ -469,6 +471,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 4200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 5700 4200 50  0001 C CNN
 F 4 "296-39098-1-ND" H 5700 4200 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 5700 4200 50  0001 C CNN "Done"
+F 6 "C94590" H 5700 4200 50  0001 C CNN "LCSC"
 	1    5700 4200
 	1    0    0    -1  
 $EndComp
@@ -482,6 +485,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 5350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 5700 5350 50  0001 C CNN
 F 4 "296-39098-1-ND" H 5700 5350 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 5700 5350 50  0001 C CNN "Done"
+F 6 "C94590" H 5700 5350 50  0001 C CNN "LCSC"
 	2    5700 5350
 	1    0    0    -1  
 $EndComp
@@ -545,6 +549,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8050 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 8050 5100 50  0001 C CNN
 F 4 "296-39098-1-ND" H 8050 5100 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8050 5100 50  0001 C CNN "Done"
+F 6 "C94590" H 8050 5100 50  0001 C CNN "LCSC"
 	2    8050 5100
 	1    0    0    1   
 $EndComp
@@ -655,6 +660,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3100 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 3100 1600 50  0001 C CNN
 F 4 "296-39098-1-ND" H 3100 1600 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 3100 1600 50  0001 C CNN "Done"
+F 6 "C94590" H 3100 1600 50  0001 C CNN "LCSC"
 	3    3100 1600
 	1    0    0    -1  
 $EndComp
@@ -1039,6 +1045,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 1200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 5700 1200 50  0001 C CNN
 F 4 "296-39098-1-ND" H 5700 1200 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 5700 1200 50  0001 C CNN "Done"
+F 6 "C94590" H 5700 1200 50  0001 C CNN "LCSC"
 	1    5700 1200
 	1    0    0    -1  
 $EndComp
@@ -1052,6 +1059,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 5700 2350 50  0001 C CNN
 F 4 "296-39098-1-ND" H 5700 2350 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 5700 2350 50  0001 C CNN "Done"
+F 6 "C94590" H 5700 2350 50  0001 C CNN "LCSC"
 	2    5700 2350
 	1    0    0    -1  
 $EndComp
@@ -1114,6 +1122,7 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8050 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1612.pdf" H 8050 2100 50  0001 C CNN
 F 4 "296-39098-1-ND" H 8050 2100 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 8050 2100 50  0001 C CNN "Done"
+F 6 "C94590" H 8050 2100 50  0001 C CNN "LCSC"
 	1    8050 2100
 	1    0    0    1   
 $EndComp

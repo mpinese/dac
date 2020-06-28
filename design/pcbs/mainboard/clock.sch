@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -78,6 +78,7 @@ F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 6100 4150 50  0001 C CNN
 F 3 "https://www.idt.com/us/en/document/dst/5pb11xx-family-datasheet" H 6100 4150 50  0001 C CNN
 F 4 "800-2889-5-ND" H 5950 4400 50  0001 C CNN "DigiKey"
 F 5 "Yes" H 5950 4400 50  0001 C CNN "Done"
+F 6 "C150285" H 5950 4400 50  0001 C CNN "LCSC"
 	1    5950 4400
 	1    0    0    -1  
 $EndComp

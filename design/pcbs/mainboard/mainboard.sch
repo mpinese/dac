@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DAC1 Main board"
+Date "2020-06-27"
+Rev "1.0.0"
+Comp "© Mark Pinese 2020"
+Comment1 "To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"
+Comment2 "This work is licensed under CC BY 4.0."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -64,10 +64,10 @@ L Device:R R9
 U 1 1 5ECF9309
 P 6500 4500
 F 0 "R9" H 6650 4450 50  0000 C CNN
-F 1 "2.7k" H 6650 4550 50  0000 C CNN
+F 1 "2.4k" H 6650 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6430 4500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6500 4500 50  0001 C CNN
-F 4 "C25885" H 6500 4500 50  0001 C CNN "LCSC"
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2401TCE_C25882.pdf" H 6500 4500 50  0001 C CNN
+F 4 "C25882" H 6500 4500 50  0001 C CNN "LCSC"
 F 5 "Yes" H 6500 4500 50  0001 C CNN "Done"
 F 6 "Pullup" H 6500 4500 50  0001 C CNN "Function"
 	1    6500 4500
@@ -78,10 +78,10 @@ L Device:R R6
 U 1 1 5ECF9BAA
 P 6650 4500
 F 0 "R6" H 6500 4450 50  0000 C CNN
-F 1 "2.7k" H 6500 4550 50  0000 C CNN
+F 1 "2.4k" H 6500 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6580 4500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF2701TCE_C25885.pdf" H 6650 4500 50  0001 C CNN
-F 4 "C25885" H 6650 4500 50  0001 C CNN "LCSC"
+F 3 "Uniroyal-Elec-0402WGF2401TCE_C25882.pdf" H 6650 4500 50  0001 C CNN
+F 4 "C25882" H 6650 4500 50  0001 C CNN "LCSC"
 F 5 "Yes" H 6650 4500 50  0001 C CNN "Done"
 F 6 "Pullup" H 6650 4500 50  0001 C CNN "Function"
 	1    6650 4500
