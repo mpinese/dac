@@ -3071,12 +3071,8 @@ F 7 "Yes" H 6750 3000 50  0001 C CNN "Done"
 	1    6750 3000
 	0    1    1    0   
 $EndComp
-Connection ~ 6050 2950
 Wire Wire Line
-	6050 2950 6050 2800
-Wire Wire Line
-	6250 2950 6250 3150
-Connection ~ 6250 2950
+	6050 2750 6050 2600
 Connection ~ 6750 2350
 Wire Wire Line
 	6750 2350 6750 2200
@@ -3121,70 +3117,44 @@ F 3 "" H 6250 2000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C42
-U 1 1 5EC776CB
-P 7500 3050
-F 0 "C42" H 7588 3096 50  0000 L CNN
-F 1 "47u" H 7588 3005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7538 2900 50  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/860240272001.pdf" H 7500 3050 50  0001 C CNN
-F 4 "<= 5V" H 7500 3050 50  0001 C CNN "Vbias"
-F 5 "Noise reduction" H 7500 3050 50  0001 C CNN "Function"
-F 6 "732-9306-1-ND" H 7500 3050 50  0001 C CNN "DigiKey"
-F 7 "Yes" H 7500 3050 50  0001 C CNN "Done"
-	1    7500 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP_Small C59
 U 1 1 5EC768A9
 P 7200 3050
 F 0 "C59" H 7288 3096 50  0000 L CNN
 F 1 "47u" H 7288 3005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7238 2900 50  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/860240272001.pdf" H 7200 3050 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7238 2900 50  0001 C CNN
+F 3 "" H 7200 3050 50  0001 C CNN
 F 4 "<= 5V" H 7200 3050 50  0001 C CNN "Vbias"
-F 5 "Noise reduction" H 7200 3050 50  0001 C CNN "Function"
-F 6 "732-9306-1-ND" H 7200 3050 50  0001 C CNN "DigiKey"
+F 5 "" H 7200 3050 50  0001 C CNN "Function"
+F 6 "493-15014-ND" H 7200 3050 50  0001 C CNN "DigiKey"
 F 7 "Yes" H 7200 3050 50  0001 C CNN "Done"
 	1    7200 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR069
-U 1 1 5EC7256D
-P 6050 2950
-F 0 "#PWR069" H 6050 2700 50  0001 C CNN
-F 1 "GNDD" H 6050 2800 50  0000 C CNN
-F 2 "" H 6050 2950 50  0001 C CNN
-F 3 "" H 6050 2950 50  0001 C CNN
-	1    6050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C48
 U 1 1 5EC6F4C3
-P 6150 2950
-F 0 "C48" V 6100 2700 50  0000 C CNN
-F 1 "0.1u" V 6200 2700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 2800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6150 2950 50  0001 C CNN
-F 4 "C14663" H 6150 2950 50  0001 C CNN "LCSC"
-F 5 "3.3" V 6150 2950 50  0001 C CNN "Vbias"
-F 6 "Decoupling" H 6150 2950 50  0001 C CNN "Function"
-F 7 "Yes" H 6150 2950 50  0001 C CNN "Done"
-	1    6150 2950
+P 6150 2750
+F 0 "C48" V 6100 2500 50  0000 C CNN
+F 1 "0.1u" V 6200 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 2600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6150 2750 50  0001 C CNN
+F 4 "C14663" H 6150 2750 50  0001 C CNN "LCSC"
+F 5 "3.3" V 6150 2750 50  0001 C CNN "Vbias"
+F 6 "Decoupling" H 6150 2750 50  0001 C CNN "Function"
+F 7 "Yes" H 6150 2750 50  0001 C CNN "Done"
+	1    6150 2750
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR071
 U 1 1 5EC6E821
-P 6250 2650
-F 0 "#PWR071" H 6250 2500 50  0001 C CNN
-F 1 "+3V3" H 6265 2823 50  0000 C CNN
-F 2 "" H 6250 2650 50  0001 C CNN
-F 3 "" H 6250 2650 50  0001 C CNN
-	1    6250 2650
+P 6250 2450
+F 0 "#PWR071" H 6250 2300 50  0001 C CNN
+F 1 "+3V3" H 6265 2623 50  0000 C CNN
+F 2 "" H 6250 2450 50  0001 C CNN
+F 3 "" H 6250 2450 50  0001 C CNN
+	1    6250 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3217,17 +3187,6 @@ F 3 "" H 5600 4150 50  0001 C CNN
 	1    5600 4150
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GNDD #PWR072
-U 1 1 5EC6BB00
-P 6250 4900
-F 0 "#PWR072" H 6250 4650 50  0001 C CNN
-F 1 "GNDD" H 6254 4745 50  0000 C CNN
-F 2 "" H 6250 4900 50  0001 C CNN
-F 3 "" H 6250 4900 50  0001 C CNN
-	1    6250 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 4250 5750 4250
 $Comp
@@ -3241,22 +3200,6 @@ F 3 "" H 5600 4250 50  0001 C CNN
 	1    5600 4250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5550 3350 5750 3350
-Wire Wire Line
-	5750 3650 5550 3650
-Wire Wire Line
-	5550 3550 5750 3550
-Wire Wire Line
-	5550 3450 5750 3450
-Text HLabel 5550 3350 0    50   Input ~ 0
-MCLK
-Text HLabel 5550 3550 0    50   Input ~ 0
-LRCKIN
-Text HLabel 5550 3450 0    50   Input ~ 0
-BCKIN
-Text HLabel 5550 3650 0    50   Input ~ 0
-SDIN
 Text HLabel 5550 4050 0    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 5550 3850 0    50   BiDi ~ 0
@@ -3297,7 +3240,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 1900 6450 2000
 Wire Wire Line
-	6250 2650 6250 2800
+	6250 2450 6250 2600
 $Comp
 L Device:CP_Small C?
 U 1 1 5ECF477A
@@ -3322,24 +3265,24 @@ Wire Wire Line
 $Comp
 L Device:CP_Small C?
 U 1 1 5ECF5115
-P 6150 2800
+P 6150 2600
 AR Path="/5EC77FFA/5ECF5115" Ref="C?"  Part="1" 
 AR Path="/5EC7811C/5ECF5115" Ref="C49"  Part="1" 
-F 0 "C49" V 6350 2700 50  0000 C CNN
-F 1 "10u" V 6250 2750 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6188 2650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 6150 2800 50  0001 C CNN
-F 4 "3.3" V 6150 2800 50  0001 C CNN "Vbias"
-F 5 "Decoupling" H 6150 2800 50  0001 C CNN "Function"
-F 6 "" V 6150 2800 50  0001 C CNN "DigiKey"
-F 7 "C7171" H 6150 2800 50  0001 C CNN "LCSC"
-F 8 "Yes" H 6150 2800 50  0001 C CNN "Done"
-	1    6150 2800
+F 0 "C49" V 6350 2500 50  0000 C CNN
+F 1 "10u" V 6250 2550 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6188 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/AVX-TAJA106K016RNJ_C7171.pdf" H 6150 2600 50  0001 C CNN
+F 4 "3.3" V 6150 2600 50  0001 C CNN "Vbias"
+F 5 "Decoupling" H 6150 2600 50  0001 C CNN "Function"
+F 6 "" V 6150 2600 50  0001 C CNN "DigiKey"
+F 7 "C7171" H 6150 2600 50  0001 C CNN "LCSC"
+F 8 "Yes" H 6150 2600 50  0001 C CNN "Done"
+	1    6150 2600
 	0    1    -1   0   
 $EndComp
-Connection ~ 6250 2800
+Connection ~ 6250 2600
 Wire Wire Line
-	6250 2800 6250 2950
+	6250 2600 6250 2750
 Wire Wire Line
 	6650 2750 6650 2850
 $Comp
@@ -3475,7 +3418,7 @@ F 3 "" H 6750 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 4750 6250 4900
+	6250 4750 6250 4850
 $Comp
 L Device:R R16
 U 1 1 5EE0ACD0
@@ -3728,4 +3671,65 @@ $EndComp
 Connection ~ 2100 5550
 Wire Wire Line
 	2100 5550 2200 5550
+Text HLabel 5550 3350 0    50   Input ~ 0
+MCLK
+Wire Wire Line
+	5550 3350 5750 3350
+Wire Wire Line
+	6450 4850 6250 4850
+$Comp
+L power:GND #PWR032
+U 1 1 5EFF5170
+P 6050 2750
+F 0 "#PWR032" H 6050 2500 50  0001 C CNN
+F 1 "GND" H 6055 2577 50  0000 C CNN
+F 2 "" H 6050 2750 50  0001 C CNN
+F 3 "" H 6050 2750 50  0001 C CNN
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2750
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 5EFFB866
+P 6250 2950
+F 0 "FB3" H 6050 2900 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 6350 2905 50  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 2950 50  0001 C CNN
+F 3 "~" H 6250 2950 50  0001 C CNN
+	1    6250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2850 6250 2750
+Connection ~ 6250 2750
+Wire Wire Line
+	6250 3050 6250 3150
+Wire Wire Line
+	5750 3650 5550 3650
+Wire Wire Line
+	5550 3550 5750 3550
+Wire Wire Line
+	5550 3450 5750 3450
+Text HLabel 5550 3550 0    50   Input ~ 0
+LRCKIN
+Text HLabel 5550 3450 0    50   Input ~ 0
+BCKIN
+Text HLabel 5550 3650 0    50   Input ~ 0
+SDIN
+$Comp
+L Device:CP_Small C42
+U 1 1 5EC776CB
+P 7500 3050
+F 0 "C42" H 7588 3096 50  0000 L CNN
+F 1 "47u" H 7588 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7538 2900 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+F 4 "<= 5V" H 7500 3050 50  0001 C CNN "Vbias"
+F 5 "" H 7500 3050 50  0001 C CNN "Function"
+F 6 "493-15014-ND" H 7500 3050 50  0001 C CNN "DigiKey"
+F 7 "Yes" H 7500 3050 50  0001 C CNN "Done"
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -4,11 +4,11 @@ This project describes the hardware and firmware for a high-quality DIY USB ster
 
 ## Background
 
-I was after a DAC for my computer headphone setup. Although there are excellent readymade options available (eg https://www.henryaudio.com/), these need a separate amplifier and/or preamplifier, which starts to be quite a committment in terms of both cost and desk space. Seeing as I enjoy a bit of DIY hardware, I thought to have a go at designing the ideal DAC for me. This would be a high-quality but fairly compact single-box DAC, with integrated preamp and headphone amplifier. If stereo line out and digital (eg S/PDIF in) could be included with minimal effort that would be a bonus.
+I was after a DAC for my computer headphone setup. Seeing as I enjoy a bit of DIY hardware, I thought to have a go at designing the ideal DAC for me. This would be a high-quality but fairly compact single-box DAC, with integrated preamp and headphone amplifier. If stereo line out and digital (eg S/PDIF in) could be included with minimal effort that would be a bonus.
 
 ## Design philosophy
 
-The design is balanced towards maximum audio quality while hopefully avoiding audiophile silliness. Close attention is paid to performance of the key components, gain structure, power rails, stability, and transfer characteristics in the 20-20kHz spectrum. However, you won't see esoteric materials (silk capacitors anyone?), valves, absurdly overspecified linear power supplies / space heaters, etc.
+The design is balanced towards maximum audio quality while hopefully avoiding audiophile silliness. Close attention is paid to performance of the key components, gain structure, power rails, stability, and transfer characteristics in the 20-20kHz spectrum. However, you won't see esoteric components, valves, absurdly overspecified linear power supplies / space heaters, etc.
 
 Key principles in the design were:
 1. Use asynchronous mode USB audio. I want the PC to have as little influence as possible on the audio playback.
@@ -37,11 +37,11 @@ I would have liked to add '0. Test everything, remove anything unnecessary' but 
 ```
 
 * USB to I2S: [Amanero module](https://amanero.com/). A well-established solution for asynchronous USB to I2S conversion. I considered adopting a DIY approach for this stage, but there's no way I could replicate the Amanero's functionality without an investment of effort that far exceeds the cost of the module.
-* Clock: Onboard 24.576 MHz oscillator driving both the ASRC and the DAC. The Amanero MCLK output is not used.
+* Clock: Onboard 24.576 MHz oscillator driving both the ASRC and the DAC. The Amanero MCLK output is not used. Simulations indicated that the Kyocera ### is good enough here, and that the popular Crystek CHD series crystal, which has better specs but costs 10X more, is overkill.
 * Receiver and ASRC: SRC4392, converting input to fs=96 kHz. This stage also performs digital volume control / attenuation if required.
 * DAC: PCM1792A running at fs=96 kHz, with slow rolloff reconstruction filter.
 * I2V: Op-amp based, standard Philips architecture of dual transimpedance amplifiers followed by a difference stage. OPA1612 devices for minimum noise. Gain flat within 0.1 dB 20 Hz to 20 kHz. Phase linear within 5 deg to 20 kHz (group delay < 0.1 ms). Total noise < 700 nV RMS (20 Hz - 20 kHz), equivalent to -125 dB relative to +4 dBu output level.
-* Amplifier: OPA1612 + LME49600 buffer in feedback loop, unity gain (therefore maximum output level is 3.472 Vpp, matching the line out). AC-coupled input to avoid headphone damage in the case of DC signal, -3 dB at 7.7 Hz, -0.6 dB at 20 Hz, -0.1 dB at 50 Hz and higher; group delay 2.6 ms at 20 Hz, < 0.5 ms at 50 Hz and higher.  Characterised down to 16 ohm headphones, stable for all reasonable capacitances.
+* Amplifier: OPA1612 + LME49600 buffer in feedback loop, unity gain (therefore maximum output level is 3.472 Vpp, matching the line out). AC-coupled input to avoid headphone damage in the case of DC signal, -3 dB at 7.7 Hz, -0.6 dB at 20 Hz, -0.1 dB at 50 Hz and higher; group delay 2.6 ms at 20 Hz, < 0.5 ms at 50 Hz and higher.  Somewhat overkill: characterised down to 16 ohm headphones, stable for all reasonable capacitances, and should be capable of driving any dynamic headphone or IEM out there.
 * MCU: STM8S003F3P
 * PSU: Switchmode modules for analog and digital supplies, in an external enclosure with LC filtering. In the main DAC enclosure, TPS7A linear postregulators for analog rails.
 

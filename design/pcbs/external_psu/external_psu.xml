@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Mark\Desktop\Synced\projects\dac\design\pcbs\external_psu\external_psu.sch</source>
+    <date>28/06/2020 11:24:49 AM</date>
+    <tool>Eeschema (5.1.5)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DAC1 External PSU</title>
+        <company>© Mark Pinese 2020</company>
+        <rev>1.0.0</rev>
+        <date>2020-06-27</date>
+        <source>external_psu.sch</source>
+        <comment number="1" value="To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0"/>
+        <comment number="2" value="This work is licensed under CC BY 4.0."/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="PS1">
+      <value>RAC20-12DK</value>
+      <footprint>CONV_RAC20-12DK</footprint>
+      <datasheet>https://recom-power.com/pdf/Powerline_AC-DC/RAC20-K.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">945-3239-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="dac" part="RAC20-12DK" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED0A52C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED1B680</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>15u</value>
+      <footprint>dac:NRS5020T150MMGJ</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=NRS5020T150MMGJ%20%20&amp;u=M</datasheet>
+      <fields>
+        <field name="DigiKey">587-2410-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED1BCF5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED1C31B</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED1C712</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED21C0B</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>15n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/885012207123.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-12189-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED2261F</tstamp>
+    </comp>
+    <comp ref="FL1">
+      <value>EMI_Filter_CLC</value>
+      <footprint>dac:4700-008MLF</footprint>
+      <datasheet>http://www.ctscorp.com/wp-content/uploads/2016/01/4700-008.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">410-1196-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="EMI_Filter_CLC" description="EMI T-filter (CLC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED2823B</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36F7E</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>15u</value>
+      <footprint>dac:NRS5020T150MMGJ</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=NRS5020T150MMGJ%20%20&amp;u=M</datasheet>
+      <fields>
+        <field name="DigiKey">587-2410-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36F8A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36F97</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36FA4</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36FB0</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>15n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/885012207123.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-12189-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36FBC</tstamp>
+    </comp>
+    <comp ref="FL2">
+      <value>EMI_Filter_CLC</value>
+      <footprint>dac:4700-008MLF</footprint>
+      <datasheet>http://www.ctscorp.com/wp-content/uploads/2016/01/4700-008.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">410-1196-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="EMI_Filter_CLC" description="EMI T-filter (CLC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED36FC8</tstamp>
+    </comp>
+    <comp ref="PS2">
+      <value>RAC03-05SK</value>
+      <footprint>CONV_RAC03-05SK</footprint>
+      <datasheet>https://www.recom-power.com/pdf/Powerline_AC-DC/RAC03-K.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">945-3441-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="dac" part="RAC03-05SK" description="3W AC/DC-Converter 'POWERLINE' 3kV reg"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED7A41D</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED828C5</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>15u</value>
+      <footprint>dac:NRS5020T150MMGJ</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=NRS5020T150MMGJ%20%20&amp;u=M</datasheet>
+      <fields>
+        <field name="DigiKey">587-2410-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED828D1</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED828DE</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>6.8u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kyb</datasheet>
+      <fields>
+        <field name="DigiKey">565-4006-ND</field>
+        <field name="Done">Yes</field>
+        <field name="Vbias">12</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED828EB</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/10/31/Data%20sheet_CL31B225KBHNFNE.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">1276-3137-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED828F7</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>15n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://katalog.we-online.de/pbs/datasheet/885012207123.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">732-12189-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED82903</tstamp>
+    </comp>
+    <comp ref="FL3">
+      <value>EMI_Filter_CLC</value>
+      <footprint>dac:4700-008MLF</footprint>
+      <datasheet>http://www.ctscorp.com/wp-content/uploads/2016/01/4700-008.pdf</datasheet>
+      <fields>
+        <field name="DigiKey">410-1196-1-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="EMI_Filter_CLC" description="EMI T-filter (CLC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED8290F</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED28772</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED297A6</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED29951</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED29B63</tstamp>
+    </comp>
+    <comp ref="CONN6">
+      <value>+5V</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED963C6</tstamp>
+    </comp>
+    <comp ref="CONN5">
+      <value>-12V</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6D3B5</tstamp>
+    </comp>
+    <comp ref="CONN4">
+      <value>0V</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6CECA</tstamp>
+    </comp>
+    <comp ref="CONN3">
+      <value>+12V</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6B3E2</tstamp>
+    </comp>
+    <comp ref="CONN2">
+      <value>N</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6FDD4</tstamp>
+    </comp>
+    <comp ref="CONN1">
+      <value>L</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_Drill2.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6F1BC</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>~</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">240-2497-ND</field>
+        <field name="Done">Yes</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EED238E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="EMI_Filter_CLC">
+      <description>EMI T-filter (CLC)</description>
+      <docs>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb</docs>
+      <footprints>
+        <fp>Filter*</fp>
+        <fp>Resonator*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FL</field>
+        <field name="Value">EMI_Filter_CLC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="dac" part="RAC03-05SK">
+      <description>3W AC/DC-Converter 'POWERLINE' 3kV reg</description>
+      <docs>Unavailable</docs>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">RAC03-05SK</field>
+        <field name="Footprint">CONV_RAC03-05SK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VAC_IN(L)" type="power_in"/>
+        <pin num="2" name="-VOUT" type="power_out"/>
+        <pin num="3" name="+VOUT" type="power_out"/>
+        <pin num="4" name="VAC_IN(N)" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="dac" part="RAC20-12DK">
+      <docs>https://recom-power.com/pdf/Powerline_AC-DC/RAC20-K.pdf</docs>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">RAC20-12DK</field>
+        <field name="Footprint">CONV_RAC20-12DK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VAC_IN(N)" type="power_in"/>
+        <pin num="2" name="VAC_IN(L)" type="power_in"/>
+        <pin num="3" name="-VOUT" type="power_out"/>
+        <pin num="4" name="COM" type="power_out"/>
+        <pin num="5" name="+VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="dac">
+      <uri>C:\Users\Mark\Desktop\Synced\projects\dac\design\pcbs\external_psu/../lib/dac.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/LIVE">
+      <node ref="CONN1" pin="1"/>
+      <node ref="PS2" pin="1"/>
+      <node ref="PS1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(C3-Pad1)">
+      <node ref="C9" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="L3" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="PS2" pin="3"/>
+    </net>
+    <net code="3" name="Net-(C12-Pad1)">
+      <node ref="FL3" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="L3" pin="2"/>
+    </net>
+    <net code="5" name="Net-(CONN6-Pad1)">
+      <node ref="CONN6" pin="1"/>
+      <node ref="FL3" pin="3"/>
+    </net>
+    <net code="6" name="Net-(CONN3-Pad1)">
+      <node ref="CONN3" pin="1"/>
+      <node ref="FL1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(CONN5-Pad1)">
+      <node ref="FL2" pin="3"/>
+      <node ref="CONN5" pin="1"/>
+    </net>
+    <net code="9" name="/NEUTRAL">
+      <node ref="PS1" pin="1"/>
+      <node ref="CONN2" pin="1"/>
+      <node ref="PS2" pin="4"/>
+    </net>
+    <net code="10" name="Net-(FB1-Pad1)">
+      <node ref="FB1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(FB1-Pad2)">
+      <node ref="FB1" pin="2"/>
+    </net>
+    <net code="12" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="PS1" pin="5"/>
+      <node ref="C4" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="13" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="FL1" pin="1"/>
+    </net>
+    <net code="14" name="Net-(C2-Pad2)">
+      <node ref="PS1" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="L2" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C11-Pad1)">
+      <node ref="C8" pin="2"/>
+      <node ref="FL2" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="L2" pin="2"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="16" name="GND">
+      <node ref="C6" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="PS2" pin="2"/>
+      <node ref="FL2" pin="2"/>
+      <node ref="CONN4" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="FL3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="FL1" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="PS1" pin="4"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+  </nets>
+</export>

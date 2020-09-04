@@ -1,0 +1,25 @@
+TODO:
+* Look into VCom cap.  Silmic used in eval board.  Consider bipolar. 50/63 V seems a sweet spot.
+* Double check layout around DAC c/f 1794 datasheet.
+  Definitely looks like it needs work.  TI suggest connecting AGND and DGND, and a GND pour around the device.
+* Add provision for biasing output OA?
+* Shielding of case?
+* Check LC prefilter -- see eg https://www.eevblog.com/forum/beginners/lc-filter-after-regulator/    http://axotron.se/print.php?page=40
+* Need a diode across Ls?
+
+* Check serial term resistors. 1794 suggests 10 ohm for CLK, 27 ohm for rest -- but on receiving end.  1794 EVM has nothing.  4392 EVM has 100 ohm for all.
+  4392 datasheet does not specify impedance, but does say that for 4 mA Iout, Vout is at least 0.8*VIO. VIO=3.3 V, so a drop of 0.2*3.3 V = 0.66 V.  0.66 V at 4 mA is Z = 165 ohm.
+  This is an upper limit, and Vout <= VIO => Z = 0 is the lower bound.  Not very helpful.
+  Simulations indicate that a 10 ohm resistor is the safe option.  It causes hardly any signal degradation for Z = 165, and leads to a very nice signal quality for Z = 0.
+  However, see https://www.analog.com/media/en/training-seminars/tutorials/MT-031.pdf which suggests a rather high R (500 ohm) for isolation.
+  BTW low-L resistors preferred -- carbon or non-etched film.
+
+* Double-check 1792 output current polarity.  Done.
+* Si8645 termination?  Internal 50 ohm, so OK.
+
+
+
+* LT3042 worth it?  https://www.diyaudio.com/forums/power-supplies/270681-ultra-low-noise-psrr-ldo-lt3042-2.html
+  Keep in mind DAC performance & ripple suppression.  See eg https://quantasylum.com/blogs/news/simple-isolated-15v-split-rail
+
+
