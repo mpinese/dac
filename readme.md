@@ -1,3 +1,8 @@
+# Note
+
+This project is still under active design, and is not yet completed! Do not build it expecting a functional device... yet.
+
+
 # An (Almost) No Compromise USB Stereo DAC
 
 This project describes the hardware and firmware for a high-quality DIY USB stereo digital to analogue converter (DAC) with optional integrated digital volume control and headphone amplifier.
